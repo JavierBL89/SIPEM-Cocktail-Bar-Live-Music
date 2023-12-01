@@ -1,0 +1,856 @@
+/****
+* About page styling 
+* @author Javier Bastande 
+**/
+
+#about-header {
+    height: 200px;
+}
+
+/********** story section**/
+#story-decorator .decorator,
+#alex-decorator .decorator {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#story .decorator img:last-child {
+    position: relative;
+    z-index: 1;
+}
+
+#call-action h4,
+#story .story-wraper,
+#john .john-wraper,
+#alex .alex-,
+.call-action-heading {
+    font-family: "League Spartan";
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+#story .story-wraper,
+#john .john-wraper,
+#alex .alex-wraper {
+    min-height: 600px;
+    width: 100%;
+}
+
+#story .story-wraper .story-container,
+#john .john-wraper .john-container,
+#alex .alex-wraper .alex-container {
+    margin: 0 auto;
+    min-width: fit-content;
+}
+
+#story #story-img-wraper {
+    width: 100%;
+    min-height: 600px;
+    background-image: url("./../assets/images/about-simpem-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#story .about-desc-wraper p {
+    margin-top: 30px;
+}
+
+#story .about-desc-wraper,
+#john .john-desc-wraper {
+    padding: 70px;
+    font-size: 23px;
+}
+
+#john #about-heading {
+    text-align: center;
+    font-size: 65px;
+}
+
+/********* john section**/
+#john .pin-holder {
+    background-image: url("./../assets/images/pin.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 10%;
+    height: 30px;
+}
+
+.pin-separator {
+    display: flex;
+    direction: row;
+    width: 400px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.pin-separator .gold-circle {
+    width: 5px;
+    height: 5px;
+    border: solid 2px #9E7F66;
+    border-radius: 50px;
+}
+
+.pin-separator .gold-line {
+    width: 60px;
+    height: 1px;
+    background-color: #9E7F66;
+    border-radius: 5px;
+    margin-left: 7px;
+}
+
+#john .john-wraper {
+    background-color: #111111;
+    color: #ffffff;
+    padding-bottom: 60px;
+}
+
+#john .john-wraper #john-img-wraper {
+    width: 100%;
+    min-height: 520px;
+    background-image: url("./../assets/images/john.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/********* alex section**/
+#alex #alex-decorator {
+    position: absolute;
+    right: 0;
+}
+
+
+#alex .alex-wraper {
+    color: #111111;
+    padding-bottom: 60px;
+}
+
+#alex .alex-wraper #alex-img-wraper {
+    width: 100%;
+    min-height: 520px;
+    background-image: url("./../assets/images/alex.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/****** call to action **/
+.call-action-wraper {
+    min-height: 200px;
+    max-height: 320px;
+}
+
+.call-action-wraper .call-action-container {
+    min-height: inherit;
+    max-height: inherit;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.call-action-wraper .call-action-container .row {
+    height: inherit;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    margin: 110px auto auto;
+    width: 1000px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+}
+
+#call-action h4 {
+    font-size: 50px;
+    letter-spacing: 0.5;
+}
+
+.call-action-wraper .call-action-img-holder {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    min-height: 300px;
+    max-height: 320px;
+    background-image: url("./../assets/images/call-action-img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.call-action-wraper a {
+    height: 75px;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 20px;
+    letter-spacing: 1.5px;
+    color: #ffffff;
+    border: solid 1px #ffffff;
+    border-radius: 0;
+    width: 50%;
+    background-color: transparent;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.call-action-wraper a:hover {
+    border: solid 1px #111111;
+    transition: 0.5s;
+    background-color: #ffffff;
+    color: #111111;
+    cursor: url("./../assets/images/pointer.png"), auto;
+}
+
+/*************************** Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #about-header {
+        height: 200px;
+    }
+
+    /********* story section**/
+    #story #story-decorator {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    #story-decorator .decorator,
+    #alex-decorator .decorator {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #story .decorator img:first-child {
+        height: 540px;
+        width: 40%;
+        z-index: -1;
+    }
+
+    #story .decorator img:last-child {
+        max-height: 80px;
+        width: 400px;
+        max-width: 250px;
+        position: relative;
+        z-index: 1;
+        top: 400px;
+        right: 500px;
+        height: 110px;
+    }
+
+    .story-wraper h1 {
+        font-size: 65px;
+        margin-bottom: 0;
+    }
+
+    small {
+        margin-bottom: 20px;
+    }
+
+    #story .story-wraper,
+    #john .john-wraper,
+    #alex .alex-wraper {
+        min-height: 600px;
+        width: 100%;
+
+    }
+
+    #story .story-wraper .story-container,
+    #john .john-wraper .john-container,
+    #alex .alex-wraper .alex-container {
+        margin: 0 auto;
+        min-width: fit-content;
+        min-width: 1200px;
+        max-width: 1300px;
+        padding: 200px 60px 100px;
+    }
+
+    #story #story-img-wraper {
+        width: 100%;
+        min-height: 600px;
+        background-image: url("./../assets/images/about-simpem-img.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #story .about-desc-wraper p {
+        margin-top: 30px;
+    }
+
+    #story .about-desc-wraper,
+    #john .john-desc-wraper {
+        padding: 70px;
+        font-size: 23px;
+    }
+
+
+    #john #about-heading {
+        text-align: center;
+        font-size: 65px;
+    }
+
+    /********* john section**/
+    #john .pin-holder {
+        background-image: url("./../assets/images/pin.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 10%;
+        height: 30px;
+    }
+
+    .pin-separator {
+        display: flex;
+        direction: row;
+        width: 400px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .pin-separator .gold-circle {
+        width: 5px;
+        height: 5px;
+        border: solid 2px #9E7F66;
+        border-radius: 50px;
+    }
+
+    .pin-separator .gold-line {
+        width: 60px;
+        height: 1px;
+        background-color: #9E7F66;
+        border-radius: 5px;
+        margin-left: 7px;
+    }
+
+    #john .john-wraper {
+        background-color: #111111;
+        color: #ffffff;
+        padding-bottom: 60px;
+    }
+
+    #john .john-wraper #john-img-wraper {
+        width: 100%;
+        min-height: 520px;
+        background-image: url("./../assets/images/john.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /********* alex section**/
+    #alex #alex-decorator {
+        position: absolute;
+        right: 0;
+    }
+
+    #alex-decorator .decorator img:last-child {
+        height: 440px;
+        width: 100%;
+        z-index: -2;
+        padding-top: 100px;
+    }
+
+    #alex-decorator .decorator img:first-child {
+        max-height: 80px;
+        width: 200px;
+        max-width: 250px;
+        position: relative;
+        z-index: 1;
+        top: 130px;
+        left: 930px;
+        height: 110px;
+    }
+
+    #alex .alex-wraper {
+        color: #111111;
+        padding-bottom: 60px;
+
+    }
+
+    #alex .alex-desc-wraper {
+        padding-top: 30px;
+        padding-right: 70px;
+    }
+
+    #alex .alex-wraper #alex-img-wraper {
+        width: 100%;
+        min-height: 520px;
+        background-image: url("./../assets/images/alex.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /******call to action ****/
+    .call-action-wraper {
+        min-height: 200px;
+        max-height: 320px;
+    }
+
+
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 990px) and (min-width:590px) {
+
+
+    /********************************************* TABLET SCREEN SIZE *****/
+    #about-header {
+        height: 150px;
+    }
+
+    /********* story section**/
+    #story-decorator .decorator,
+    #alex-decorator .decorator {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #story .decorator img:first-child {
+        height: 200px;
+        width: 40%;
+        z-index: -1;
+    }
+
+    #story .decorator img:last-child {
+        max-height: 80px;
+        width: 200px;
+        max-width: 250px;
+        position: relative;
+        z-index: 1;
+        top: 150px;
+        right: 150px;
+        height: 110px;
+    }
+
+    .story-wraper {
+        margin: 0 auto;
+    }
+
+    .story-wraper h1 {
+        font-size: 55px;
+        margin-bottom: 0;
+    }
+
+    small {
+        margin-bottom: 20px;
+    }
+
+    #story .story-wraper .story-container .row {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    #story #story-img-wraper {
+        width: 85%;
+        min-height: 600px;
+        background-image: url("./../assets/images/about-simpem-img.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    #story .about-desc-wraper {
+        margin: 30px auto 5px;
+        padding-right: 90px;
+        max-width: 700px;
+    }
+
+    #john #about-heading {
+        text-align: center;
+        font-size: 65px;
+    }
+
+    /**** john*/
+    #john .pin-holder {
+        background-image: url("./../assets/images/pin.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 10%;
+        height: 30px;
+    }
+
+    .pin-separator {
+        display: flex;
+        direction: row;
+        width: 400px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .pin-separator .gold-circle {
+        width: 5px;
+        height: 5px;
+        border: solid 2px #9E7F66;
+        border-radius: 50px;
+    }
+
+    .pin-separator .gold-line {
+        width: 60px;
+        height: 1px;
+        background-color: #9E7F66;
+        border-radius: 5px;
+        margin-left: 7px;
+    }
+
+    #john .john-wraper .john-container {
+        padding: 100px 20px;
+        max-width: 700px;
+
+    }
+
+    #john .john-wraper {
+        background-color: #111111;
+        color: #ffffff;
+        padding-bottom: 60px;
+
+    }
+
+    #john .john-desc-wraper {
+        padding-right: 90px;
+        max-width: 700px;
+
+    }
+
+    #john .john-wraper #john-img-wraper {
+        width: 80%;
+        margin: 0 auto;
+        min-height: 520px;
+        background-image: url("./../assets/images/john.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    /********* alex section**/
+    #alex #alex-decorator {
+        position: absolute;
+        right: 0;
+        margin-top: 780px;
+    }
+
+    #alex-decorator .decorator img:last-child {
+        height: 340px;
+        width: 81%;
+        z-index: -2;
+        padding-top: 100px;
+    }
+
+    #alex-decorator .decorator img:first-child {
+        max-height: 80px;
+        width: 200px;
+        max-width: 250px;
+        position: relative;
+        z-index: 1;
+        top: 150px;
+        left: 580px;
+        height: 110px;
+    }
+
+    #alex .alex-wraper {
+        color: #111111;
+        padding-bottom: 250px;
+    }
+
+    #alex .alex-desc-wraper {
+        max-width: 700px;
+        padding: 100px 70px;
+        margin: 0 auto;
+    }
+
+    #alex .alex-wraper #alex-img-wraper {
+        width: 80%;
+        min-height: 520px;
+        background-image: url("./../assets/images/alex.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    /******call to action ****/
+    .call-action-wraper {
+        min-height: 200px;
+        max-height: 300px;
+    }
+
+    #call-action h4 {
+        font-size: 40px;
+        letter-spacing: 0.5;
+    }
+
+    .call-action-wraper .call-action-container .row {
+        margin-top: 40px;
+        max-width: 700px;
+    }
+
+    .call-action-wraper .call-action-img-holder {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        min-height: 202px;
+        max-height: 270px;
+        background-image: url("./../assets/images/call-action-img.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .call-action-wraper a {
+        height: 65px;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 20px;
+        padding-top: 15px;
+        letter-spacing: 1.5px;
+        color: #ffffff;
+        border: solid 1px #ffffff;
+        border-radius: 0;
+        width: 40%;
+        background-color: transparent;
+        text-transform: uppercase;
+        transition: 0.5s;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 575px) and (min-width:330px) {
+
+    /********************************************* TABLET SCREEN SIZE *****/
+    #about-header {
+        height: 120px;
+    }
+
+    /********* story section**/
+    #story-decorator .decorator,
+    #alex-decorator .decorator {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #story .decorator img:first-child {
+        height: 150px;
+        width: 50%;
+        z-index: -1;
+    }
+
+    #story .decorator img:last-child {
+        max-height: 60px;
+        width: 150px;
+        position: relative;
+        z-index: 1;
+        top: 120px;
+        right: 100px;
+        height: 110px;
+    }
+
+    .story-wraper {
+        margin: 0 auto;
+    }
+
+    .story-wraper h1 {
+        font-size: 40px;
+        margin-bottom: 0;
+    }
+
+    small {
+        margin-bottom: 18px;
+    }
+
+    #story .story-wraper .story-container {
+        padding: 0;
+    }
+
+    #story #story-img-wraper {
+        width: 85%;
+        min-height: 600px;
+        background-image: url("./../assets/images/about-simpem-img.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    #story .about-desc-wraper {
+        margin-top: 30px;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    #john #about-heading {
+        text-align: center;
+        font-size: 45px;
+    }
+
+    /********* john section**/
+    #john .pin-holder {
+        background-image: url("./../assets/images/pin.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 10%;
+        height: 30px;
+    }
+
+    .pin-separator {
+        display: flex;
+        direction: row;
+        width: 400px;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .pin-separator .gold-circle {
+        width: 5px;
+        height: 5px;
+        border: solid 2px #9E7F66;
+        border-radius: 50px;
+    }
+
+    .pin-separator .gold-line {
+        width: 60px;
+        height: 1px;
+        background-color: #9E7F66;
+        border-radius: 5px;
+        margin-left: 7px;
+    }
+
+    #john .john-wraper .john-container {
+        padding: 100px 20px;
+
+    }
+
+    #john .john-wraper {
+        background-color: #111111;
+        color: #ffffff;
+        padding-bottom: 60px;
+    }
+
+    #john .john-desc-wraper {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    #john .john-wraper #john-img-wraper {
+        width: 90%;
+        margin: 0 auto;
+        min-height: 520px;
+        background-image: url("./../assets/images/john.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    /********* alex section**/
+    #alex #alex-decorator {
+        position: absolute;
+        right: 0;
+        margin-top: 1000px;
+        width: inherit;
+        max-width: inherit;
+    }
+
+    #alex-decorator .decorator {
+        width: 100%;
+    }
+
+    #alex-decorator .decorator img:last-child {
+        height: 240px;
+        width: 81%;
+        z-index: -2;
+        padding-top: 100px;
+    }
+
+    #alex-decorator .decorator img:first-child {
+        max-height: 40px;
+        width: 200px;
+        max-width: 200px;
+        position: relative;
+        z-index: 1;
+        top: 170px;
+        left: 180px;
+        height: 110px;
+    }
+
+    #alex .alex-wraper {
+        color: #111111;
+        padding-bottom: 250px;
+    }
+
+    #alex .alex-desc-wraper {
+        max-width: 700px;
+        padding: 100px 50px;
+        margin: 0 auto;
+    }
+
+    #alex .alex-wraper #alex-img-wraper {
+        width: 90%;
+        height: 500px;
+        max-height: 500px;
+        background-image: url("./../assets/images/alex.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    /******call to action ****/
+    .call-action-wraper {
+        min-height: fit-content;
+        max-height: 300px;
+    }
+
+    #call-action h4 {
+        font-size: 30px;
+        letter-spacing: 0.5;
+    }
+
+    .call-action-wraper .call-action-container .row {
+        margin-top: 40px;
+        max-width: 700px;
+    }
+
+    .call-action-wraper .call-action-img-holder {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        min-height: 202px;
+        max-height: 270px;
+        background-image: url("./../assets/images/call-action-img.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .call-action-wraper a {
+        height: 55px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: 20px;
+        padding-top: 12px;
+        letter-spacing: 1.5px;
+        color: #ffffff;
+        border: solid 1px #ffffff;
+        border-radius: 0;
+        width: 70%;
+        background-color: transparent;
+        text-transform: uppercase;
+        transition: 0.5s;
+    }
+}
