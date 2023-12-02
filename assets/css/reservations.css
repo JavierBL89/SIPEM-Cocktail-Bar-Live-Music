@@ -1,3 +1,8 @@
+/****
+* Reservations page styling 
+* @author Javier Bastande 
+**/
+
 /* BEAVER: HEX: #9E7F66;
 COD-GREY: #111111;
 MIRAGE: |#17192B;
@@ -187,7 +192,7 @@ header nav .nav-link,
     border: solid 1px #111111;
     transition: 0.5s;
     color: #111111;
-    cursor: url("./../assets/images/pointer.png"), auto;
+    cursor: url("../images/pointer.png"), auto;
 }
 
 /*** containers shadow*/
@@ -210,7 +215,7 @@ input[type="checkbox"]:hover,
 #footer #modal-x-icon:hover,
 #logo-footer:hover,
 header nav .navbar-brand:hover {
-    cursor: url("./../assets/images/pointer.png"), auto;
+    cursor: url("../images/pointer.png"), auto;
 }
 
 /******* shared form inputs ***/
@@ -375,7 +380,7 @@ input[type="checkbox"]:checked {
         border: solid 1px #111111;
         transition: 0.5s;
         color: #111111;
-        cursor: url("./../assets/images/pointer.png"), auto;
+        cursor: url("..images/pointer.png"), auto;
     }
 
     #reservations-main-wraper button[type="submit"]:focus {
@@ -408,7 +413,7 @@ input[type="checkbox"]:checked {
         color: #111111;
         opacity: 0.7;
         font-size: 17px;
-        cursor: url("./../assets/images/pointer.png"), auto;
+        cursor: url("../images/pointer.png"), auto;
     }
 
 
@@ -754,7 +759,7 @@ input[type="checkbox"]:checked {
         border: solid 1px #111111;
         transition: 0.5s;
         color: #111111;
-        cursor: url("./../assets/images/pointer.png"), auto;
+        cursor: url("../images/pointer.png"), auto;
     }
 
     /*  Remove default arrows on input type=number */

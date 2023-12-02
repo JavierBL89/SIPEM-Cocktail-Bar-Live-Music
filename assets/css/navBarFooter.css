@@ -1,3 +1,8 @@
+/****
+* Navbar & Footer styling 
+* @author Javier Bastande 
+**/
+
 /*************** CLASSLIST ANIMATIONS*/
 .showMenu {
     display: block;
@@ -131,14 +136,14 @@ header .navbar {
 
 header nav .navbar-brand,
 #logo-footer {
-    background-image: url("./../assets/images/logo.png");
+    background-image: url("../images/logo.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 header nav a:hover {
-    cursor: url("./../assets/images/pointer.png"), auto;
+    cursor: url("../images/pointer.png"), auto;
 }
 
 header nav .nav-link {
@@ -155,7 +160,7 @@ header nav .nav-link::after {
     transition: all 0.5s ease;
 }
 
-header nav .nav-link:hover:after {
+header nav .nav-link:hover::after {
     height: 2px;
     width: 100%;
     background-color: #9E7F66;
@@ -182,7 +187,7 @@ header #about-bg-img {
     width: 100%;
     height: inherit;
     max-height: 950px;
-    background-image: url("./../assets/images/tables.jpg");
+    background-image: url("../images/tables.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
