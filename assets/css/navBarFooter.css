@@ -285,8 +285,6 @@ header .rectangle {
         min-width: 37%;
     }
 
-
-
     /**************** FOOTER SECTION ****/
     .footer-wraper {
         margin-top: 100px;
@@ -335,23 +333,24 @@ header .rectangle {
 
     .footer-wraper p {
         margin: 10px 6px;
-        font-size: 18px;
+        font-size: 0.9rem;
     }
 
     .footer-copyright {
         text-align: center;
         padding-top: 40px;
+        font-size: 0.6rem;
+    }
+
+    .footer-copyright p {
+        font-size: 0.6rem;
     }
 
     .authors-container .names-wraper {
         max-width: 1300px;
 
     }
-
-
 }
-
-
 
 /********************************************* TABLET SCREEN SIZE *****/
 
@@ -490,6 +489,13 @@ header .rectangle {
         margin-top: 35px;
     }
 
+    .footer-wraper .availability-wraper,
+    .footer-wraper .address-wraper {
+        text-align: left;
+        width: fit-content;
+        padding-left: 25%;
+    }
+
     .footer-wraper .social-wraper {
         margin-top: 50px;
     }
@@ -497,14 +503,19 @@ header .rectangle {
     #footer #footer-facebook-icon,
     #footer #footer-insta-icon,
     #footer #footer-x-icon {
-        height: 22px;
-        width: 22px;
+        height: 24px;
+        width: 24px;
         margin-left: 8px;
     }
 
-    .footer-wraper #footer-insta-icon {
-        height: 34px;
-        width: 34px;
+    #footer #footer-facebook-icon {
+        height: 30px;
+        width: 30px;
+    }
+
+    #footer #footer-insta-icon {
+        height: 39px;
+        width: 39px;
     }
 
     .footer-wraper p {

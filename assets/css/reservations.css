@@ -98,8 +98,8 @@ a {
 
 #left-quote,
 #right-quote {
-    width: 60px;
-    height: 60px;
+    width: 2.5rem;
+    height: 2.5rem;
 }
 
 #right-quote {
@@ -327,7 +327,6 @@ input[type="checkbox"]:checked {
 
     #reservations-main-wraper input:focus {
         font-size: 1.25rem;
-        ;
         letter-spacing: 0.5px;
         opacity: 0.7;
         border: none;
@@ -337,7 +336,6 @@ input[type="checkbox"]:checked {
     #reservations-main-wraper #contact input:active {
         letter-spacing: 0.5px;
         font-size: 1.25rem;
-        ;
         border: none;
         box-shadow: none;
     }
@@ -539,18 +537,18 @@ input[type="checkbox"]:checked {
         padding-bottom: 150px;
     }
 
-    #reservations-section-separator .grey {
+    #reservations-section-separator .separator-container {
         min-width: 70%;
         max-width: 900px;
         display: flex;
     }
 
-    #reservations-section-separator .grey img:first-child {
+    #reservations-section-separator .separator-container img:first-child {
         height: 440px;
         width: 100%;
     }
 
-    #reservations-section-separator .grey img:last-child {
+    #reservations-section-separator .separator-container img:last-child {
         height: 110px;
         width: 200px;
         max-width: 250px;
@@ -646,7 +644,7 @@ input[type="checkbox"]:checked {
     }
 
     #reservations-review p {
-        font-size: 1.875rem;
+        font-size: 1.575rem;
         letter-spacing: 0.5px;
         line-height: 50px;
         padding-left: 50px;
@@ -666,36 +664,33 @@ input[type="checkbox"]:checked {
     /******** RESERVATION SECTION */
     .reservations-wraper {
         width: 100%;
-    }
-
-    #reservations-main-wraper h4 {
-        font-size: 2.188rem;
-    }
-
-    #reservations-main-wraper .row {
-        padding-right: 0;
-    }
-
-    .reservations-wraper .reservations-container>.row {
         position: absolute;
         top: 200px;
         left: 20px;
         z-index: 1;
     }
 
-    .reservations-wraper .reservation-text-wraper {
-        margin: 0 auto;
-        height: 300px;
+    #reservations-main-wraper h4 {
+        font-size: 2.188rem;
+    }
+
+
+    .reservations-wraper .reservations-container {
         width: 80%;
-        padding: 40px 50px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+
+    .reservations-wraper .reservation-text-wraper {
+        height: 300px;
+        padding: 20px 30px;
         background-color: transparent;
     }
 
     .reservations-wraper .reservation-form-wraper {
         margin: 0 auto;
         min-height: fit-content;
-        width: 75%;
-        max-width: 550px;
         padding: 40px 50px;
         box-shadow: 16px 18px 46px -13px rgba(0, 0, 0, 0.21);
         -webkit-box-shadow: 16px 18px 46px -13px rgba(0, 0, 0, 0.21);
@@ -704,8 +699,7 @@ input[type="checkbox"]:checked {
 
     /******* BOOKING FORM*/
     #reservations form .form-input-wraper p {
-        font-size: 1.25rem;
-        ;
+        font-size: 1.1rem;
         padding-top: 10px;
     }
 
@@ -713,8 +707,7 @@ input[type="checkbox"]:checked {
     #reservations input[type="date"] {
         background-color: inherit;
         width: 100%;
-        font-size: 1.25rem;
-        ;
+        font-size: 1.1rem;
         letter-spacing: 0.5px;
         padding-left: 10px;
         border: none;
@@ -739,7 +732,7 @@ input[type="checkbox"]:checked {
     }
 
     #reservations-main-wraper input::placeholder {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
         ;
     }
 
@@ -757,6 +750,7 @@ input[type="checkbox"]:checked {
         margin-top: 30px;
         font-size: 1rem;
         opacity: 0.9;
+        padding-left: 0;
     }
 
     #reservations input[type="checkbox"] {
@@ -876,7 +870,7 @@ input[type="checkbox"]:checked {
     #reservations #contact-number-wraper select {
         max-width: 100%;
         border: none;
-        font-size: 1.25rem;
+        font-size: 1.080rem;
         ;
         margin: 4px auto 0;
     }
@@ -917,22 +911,22 @@ input[type="checkbox"]:checked {
         padding-bottom: 150px;
     }
 
-    #reservations-section-separator .grey {
+    #reservations-section-separator .separator-container {
         width: 100%;
         display: flex;
     }
 
-    #reservations-section-separator .grey img:first-child {
+    #reservations-section-separator .separator-container img:first-child {
         height: 540px;
         width: 90%;
     }
 
-    #reservations-section-separator .grey img:last-child {
+    #reservations-section-separator .separator-container img:last-child {
         max-height: 110px;
         width: 200px;
         max-width: 250px;
         position: relative;
-        top: 400px;
+        top: 500px;
         right: 700px;
         height: 110px;
     }
@@ -941,34 +935,24 @@ input[type="checkbox"]:checked {
     .contact-wraper {
         min-height: fit-content;
         width: 100%;
-        margin: 0 auto;
-        padding: 60px;
     }
 
-    .contact-wraper .contact-container>.row {
+    .contact-wraper .contact-container {
         margin: 0 auto;
-        width: 100%;
-        min-height: fit-content;
-    }
-
-    .contact-wraper .contact-container p {
-        margin: 3px auto;
+        width: 80%;
+        max-width: 600px;
     }
 
     .contact-wraper .contact-text-wraper {
-        margin: 0 auto;
-        height: fit-content;
-        width: 80%;
-        padding: 60px 0;
+        height: 480px;
+        padding: 90px 30px;
         background-color: transparent;
     }
 
+
     .contact-wraper .contact-form-wraper {
         margin: 50px auto;
-        min-height: 400px;
-        width: 95%;
-        max-width: 550px;
-        padding: 40px 40px;
+        padding: 40px 50px;
     }
 
     .contact-wraper .office-hours-wraper {
@@ -976,15 +960,10 @@ input[type="checkbox"]:checked {
     }
 
     /* CONTACT FORM */
-    #contact .contact-form-wraper .row {
-        width: 100%;
-    }
-
     #contact .contact-form-wraper textarea {
         margin: 50px 5px 0 5px;
         width: inherit;
         font-size: 1.25rem;
-        ;
         text-align: left;
         padding: 15px;
     }
@@ -1004,22 +983,22 @@ input[type="checkbox"]:checked {
         min-height: 400px;
     }
 
+    #reservations-review .review-wraper {
+        min-width: 100%;
+
+    }
+
     #reservations-review .review-container {
-        min-width: 85%;
+        width: 85%;
         margin: 120px auto;
-        padding: 30px 50px;
-        font-size: 1.25rem;
-        ;
-        letter-spacing: 0.5px;
-        line-height: 40px;
+        max-width: 650px;
     }
 
     #reservations-review p {
-        margin: 0 auto;
-        font-size: 30px;
+        padding: 30px 50px;
+        font-size: 1.25rem;
+        letter-spacing: 0.5px;
         line-height: 40px;
-        padding-left: 80px;
-        padding-right: 40px;
     }
 }
 
@@ -1357,18 +1336,18 @@ input[type="checkbox"]:checked {
         padding-bottom: 150px;
     }
 
-    #reservations-section-separator .grey {
+    #reservations-section-separator .separator-container {
         width: 100%;
 
         display: flex;
     }
 
-    #reservations-section-separator .grey img:first-child {
+    #reservations-section-separator .separator-container img:first-child {
         height: 540px;
         width: 90%;
     }
 
-    #reservations-section-separator .grey img:last-child {
+    #reservations-section-separator .separator-container img:last-child {
         max-height: 80px;
         width: 150px;
         max-width: 250px;
