@@ -684,7 +684,7 @@
     #story #story-img-wraper {
         width: 85%;
         min-height: 600px;
-        background-image: url("./../assets/images/about-simpem-img.jpg");
+        background-image: url("../images/about-simpem-img.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -704,7 +704,7 @@
 
     /********* john section**/
     #john .pin-holder {
-        background-image: url("./../assets/images/pin.png");
+        background-image: url("../images/pin.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -755,7 +755,7 @@
         width: 90%;
         margin: 0 auto;
         min-height: 520px;
-        background-image: url("./../assets/images/john.jpg");
+        background-image: url("../images/john.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -808,7 +808,7 @@
         width: 90%;
         height: 500px;
         max-height: 500px;
-        background-image: url("./../assets/images/alex.jpg");
+        background-image: url("../images/alex.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -837,7 +837,7 @@
         width: 100%;
         min-height: 202px;
         max-height: 270px;
-        background-image: url("./../assets/images/call-action-img.jpg");
+        background-image: url("../images/call-action-img.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

@@ -96,135 +96,131 @@
                             <div class="reservation-form-wraper">
                                 <div class="reservation-form-container">
                                     <form class="form" id="reservation-form" action="#" method="GET">
-                                        <div class="row">
-
-                                            <!-------- date and time ----->
-                                            <div class="form-input-wraper">
-                                                <div class="row">
-                                                    <div class="col-6 col-lg-4 ">
-                                                        <p>Pick a date</p>
-                                                    </div>
-                                                    <div class="col-6 col-lg-8 " id="datePicker-input">
-                                                        <input id="startDate" class="form-control" type="date" />
-                                                        <div class="inputBaseLine"></div>
-                                                    </div>
+                                        <!-------- date and time ----->
+                                        <div class="form-input-wraper">
+                                            <div class="row">
+                                                <div class="col-6 col-lg-4 p-0">
+                                                    <p>Pick a date</p>
                                                 </div>
-
+                                                <div class="col-6 col-lg-8 " id="datePicker-input">
+                                                    <input id="startDate" class="form-control" type="date" />
+                                                    <div class="inputBaseLine"></div>
+                                                </div>
                                             </div>
 
-                                            <div class="form-input-wraper">
-                                                <div class="row">
-                                                    <div class="col-6 col-lg-4">
-                                                        <p>Pick a time</p>
-                                                    </div>
-                                                    <div class="col-6 col-lg-8 pe-lg-0" id="timePicker-input">
-                                                        <div id="timeDropdown" class="dropdown">
-                                                            <a id="timePicker" class="btn btn-secondary" href="#"
-                                                                role="button" data-bs-toggle="dropdown"
-                                                                aria-expanded="false">
-                                                                00:00
-                                                            </a>
-                                                            <div class="dropdown-menu slot-time-dropdown-menu">
+                                        </div>
 
-                                                                <div class="row gutter-0 time-slot-wraper">
-                                                                    <div class="col-6">
+                                        <div class="form-input-wraper">
+                                            <div class="row">
+                                                <div class="col-6 col-lg-4 p-0">
+                                                    <p>Pick a time</p>
+                                                </div>
+                                                <div class="col-6 col-lg-8 pe-lg-0" id="timePicker-input">
+                                                    <div id="timeDropdown" class="dropdown">
+                                                        <a id="timePicker" class="btn btn-secondary" href="#"
+                                                            role="button" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            00:00
+                                                        </a>
+                                                        <div class="dropdown-menu slot-time-dropdown-menu">
 
-                                                                        <p class="dropdown-item">18:00</p>
-                                                                        <p class="dropdown-item">19:00</p>
-                                                                    </div>
-                                                                    <div class="col-6">
-                                                                        <p class="dropdown-item">18:30</p>
-                                                                        <p class="dropdown-item">19:30</p>
+                                                            <div class="row gutter-0 time-slot-wraper">
+                                                                <div class="col-6">
+
+                                                                    <p class="dropdown-item">18:00</p>
+                                                                    <p class="dropdown-item">19:00</p>
+                                                                </div>
+                                                                <div class="col-6">
+                                                                    <p class="dropdown-item">18:30</p>
+                                                                    <p class="dropdown-item">19:30</p>
 
 
-                                                                    </div>
                                                                 </div>
                                                             </div>
-
                                                         </div>
-                                                        <div class="inputBaseLine"></div>
 
                                                     </div>
-                                                </div>
+                                                    <div class="inputBaseLine"></div>
 
-                                            </div>
-                                            <!-------- party size ----->
-                                            <div class="form-input-wraper pe-sm-2 pe-md-2 pe-lg-0 ps-lg-3">
-                                                <input class="partySize" type="number" id="partySize" name="party-size"
-                                                    placeholder="Part size">
-                                                <div class="inputBaseLine"></div>
-                                                <div id="booking-partySizeMessageError" class="errorMessage">
-                                                    <small>Error text</small>
                                                 </div>
                                             </div>
-                                            <!-------- contact details ----->
-                                            <div class="form-input-wraper pe-md-2 pe-lg-0 ps-lg-3">
-                                                <input class="" type="text" id="fullName" name="fullName"
-                                                    placeholder="Full Name">
-                                                <div class="inputBaseLine"></div>
-                                                <div id="booking-nameMessageError" class="errorMessage">
-                                                    <small>Error text</small>
+
+                                        </div>
+                                        <!-------- party size ----->
+                                        <div class="form-input-wraper">
+                                            <input class="partySize" type="number" id="partySize" name="party-size"
+                                                placeholder="Part size">
+                                            <div class="inputBaseLine"></div>
+                                            <div id="booking-partySizeMessageError" class="errorMessage">
+                                                <small>Error text</small>
+                                            </div>
+                                        </div>
+                                        <!-------- contact details ----->
+                                        <div class="form-input-wraper">
+                                            <input class="" type="text" id="fullName" name="fullName"
+                                                placeholder="Full Name">
+                                            <div class="inputBaseLine"></div>
+                                            <div id="booking-nameMessageError" class="errorMessage">
+                                                <small></small>
+                                            </div>
+                                        </div>
+                                        <!-------- email ----->
+                                        <div class="form-input-wraper">
+                                            <input class="" type="text" id="email" name="email"
+                                                placeholder="name@example.com">
+                                            <div class="inputBaseLine"></div>
+                                            <div id="booking-emailMessageError" class="errorMessage">
+                                                <small></small>
+                                                <i></i>
+                                            </div>
+                                        </div>
+                                        <!-------- contact number ----->
+                                        <div class="row " id="contact-number-wraper">
+                                            <div class="col-5 col-md-5 col-lg-3 ps-0">
+                                                <div class="form-input-wraper p-0">
+                                                    <select class="prefix-select-wraper "
+                                                        aria-label="Select phone prefix">
+                                                        <option id="prefix" selected>+353</option>
+                                                        <option value="1">+373</option>
+                                                        <option value="2">+345</option>
+                                                        <option value="3">+384</option>
+                                                    </select>
+                                                    <div class="puta inputBaseLine"></div>
                                                 </div>
                                             </div>
-                                            <!-------- email ----->
-                                            <div class="form-input-wraper pe-md-2 pe-lg-0 ps-lg-3">
-                                                <input class="" type="text" id="email" name="email"
-                                                    placeholder="name@example.com">
-                                                <div class="inputBaseLine"></div>
-                                                <div id="booking-emailMessageError" class="errorMessage">
-                                                    <small>Please enter a valid format</small>
-                                                    <i>'emailName@whatever.domain'</i>
-                                                </div>
-                                            </div>
-                                            <!-------- contact number ----->
-                                            <div class="row " id="contact-number-wraper">
-                                                <div class="col-5 col-md-5 col-lg-3">
-                                                    <div class="form-input-wraper ps-lg-1">
-                                                        <select class="prefix-select-wraper "
-                                                            aria-label="Select phone prefix">
-                                                            <option id="prefix" selected>+353</option>
-                                                            <option value="1">+373</option>
-                                                            <option value="2">+345</option>
-                                                            <option value="3">+384</option>
-                                                        </select>
-                                                        <div class="puta inputBaseLine"></div>
+                                            <div class="col-7 col-md-7 col-lg-9 pe-0">
+                                                <div class="form-input-wraper">
+                                                    <input class="" type="text" id="phone" name="phone"
+                                                        placeholder="Contact number">
+                                                    <div class="inputBaseLine" id="phoneBaseLine"></div>
+                                                    <div id="booking-phoneMessageError" class="errorMessage">
+                                                        <small></small>
                                                     </div>
                                                 </div>
-                                                <div class="col-7 col-md-7 col-lg-9 p-0">
-                                                    <div class="form-input-wraper">
-                                                        <input class="" type="text" id="phone" name="phone"
-                                                            placeholder="Contact number">
-                                                        <div class="inputBaseLine" id="phoneBaseLine"></div>
-                                                        <div id="booking-phoneMessageError" class="errorMessage">
-                                                            <small></small>
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-check">
+                                            <div class="row">
+                                                <div class="col-2">
+                                                    <input class="form-check-input" id="checkbox" type="checkbox">
+                                                </div>
+                                                <div class="col-10">
+                                                    <label id="checkbox-label" class="form-check-label" for="checkbox">
+                                                        I confirm to be over 18 at the time of this reservation.
+                                                    </label>
                                                 </div>
                                             </div>
-                                            <div class="form-check">
-                                                <div class="row">
-                                                    <div class="col-2">
-                                                        <input class="form-check-input" id="checkbox" type="checkbox">
-                                                    </div>
-                                                    <div class="col-10">
-                                                        <label id="checkbox-label" class="form-check-label"
-                                                            for="checkbox">
-                                                            I confirm to be over 18 at the time of this reservation.
-                                                        </label>
-                                                    </div>
-                                                </div>
 
 
-                                                <div id="booking-checkBoxMessageError" class="errorMessage">
-                                                    <small></small>
-                                                </div>
+                                            <div id="booking-checkBoxMessageError" class="errorMessage">
+                                                <small></small>
                                             </div>
-                                            <div class="row g-0">
-                                                <!-- <input class="form-control" type="submit" > -->
-                                                <button class="form-control" type="submit">make reservation</button>
+                                        </div>
+                                        <div class="row g-0">
+                                            <!-- <input class="form-control" type="submit" > -->
+                                            <button class="form-control" type="submit">make reservation</button>
 
 
-                                            </div>
                                         </div>
                                     </form>
                                 </div>
@@ -263,7 +259,7 @@
                                                     name="contact-form-fullname" placeholder="Full Name">
                                                 <div class="inputBaseLine"></div>
                                                 <div id="contact-nameMessageError" class="errorMessage">
-                                                    <small>Error text</small>
+                                                    <small></small>
                                                 </div>
                                             </div>
                                             <!-------- email ----->
@@ -272,8 +268,8 @@
                                                     name="contact-form-email" placeholder="name@example.com">
                                                 <div class="inputBaseLine"></div>
                                                 <div id="contact-emailMessageError" class="errorMessage">
-                                                    <small>Please enter a valid format</small>
-                                                    <i>'emailName@whatever.domain'</i>
+                                                    <small></small>
+                                                    <i></i>
                                                 </div>
                                             </div>
                                             <!-------- contact comment ----->
