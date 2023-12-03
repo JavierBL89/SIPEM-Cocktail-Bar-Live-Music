@@ -57,13 +57,14 @@
 
 @keyframes rectangleIn {
     from {
-        position: absolute;
+        position: fixed;
         height: inherit;
         z-index: 0;
     }
 
     to {
-        position: absolute;
+        position: fixed;
+        top: 0;
         height: 100vh;
         z-index: 2;
     }
@@ -115,6 +116,24 @@
     z-index: 5;
 }
 
+.fixedLogo {
+    animation-name: fixedLogo;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    transition: ease-in-out;
+}
+
+@keyframes fixedLogo {
+    from {
+        position: initial;
+    }
+
+    to {
+        position: fixed;
+        top: 0;
+    }
+}
+
 
 /*********************  SHARED HEADER PROPERTIES*/
 header {
@@ -143,7 +162,10 @@ header nav .navbar-brand,
     background-size: cover;
 }
 
-header nav a:hover {
+header nav a:hover,
+#close-icon,
+#burger,
+#navbar-modal a {
     cursor: url("../images/pointer.png"), auto;
 }
 
@@ -398,7 +420,7 @@ header .rectangle {
 
     /********** MODAL MENU */
     #navbar-modal {
-        position: absolute;
+        position: fixed;
         top: 0;
         min-height: 100vh;
         width: 71%;
@@ -419,7 +441,11 @@ header .rectangle {
     }
 
     #navbar-modal .modal-container ul li {
-        margin: 5px auto;
+        margin: 10px auto;
+    }
+
+    #navbar-modal .modal-container .nav-link {
+        font-size: 1.3rem;
     }
 
     #navbar-modal .modal-social-wraper a {
@@ -428,23 +454,23 @@ header .rectangle {
 
     #close-icon {
         margin-top: 15px;
-        margin-right: 30px;
+        margin-right: 5px;
         font-size: 1.7rem;
     }
 
     #navbar-modal .modal-social-wraper #modal-facebook-icon {
-        height: 23px;
-        width: 23px;
+        height: 27px;
+        width: 27px;
     }
 
     #navbar-modal .modal-social-wraper #modal-insta-icon {
-        height: 32px;
-        width: 32px;
+        height: 36px;
+        width: 36px;
     }
 
     #navbar-modal .modal-social-wraper #modal-x-icon {
-        height: 21px;
-        width: 21px;
+        height: 25px;
+        width: 25px;
     }
 
 
@@ -536,6 +562,10 @@ header .rectangle {
 
     /************** NAVBAR */
 
+    header .navbar {
+        padding-right: 10px;
+    }
+
     header nav .navbar-brand {
         min-height: 105px;
         max-height: 110px;
@@ -572,11 +602,11 @@ header .rectangle {
 
     /***** modal menu */
     #navbar-modal {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 300px;
-        min-height: 100vh;
-        width: 70%;
+        height: 100vh;
+        width: 67%;
         background-color: #111111;
         color: #FFFFF0;
         z-index: 3;
@@ -588,13 +618,17 @@ header .rectangle {
         margin: 0 auto;
     }
 
+    #navbar-modal .modal-container .nav-link {
+        font-size: 1.1rem;
+    }
+
     #navbar-modal .modal-container ul {
         margin-top: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
 
     #navbar-modal .modal-container ul li {
-        margin: 5px auto;
+        margin: 7px auto;
     }
 
     #navbar-modal .modal-social-wraper a {
@@ -603,34 +637,29 @@ header .rectangle {
     }
 
     #close-icon {
-        margin-top: 10px;
+        margin-top: 5px;
         margin-right: -10px;
         font-size: 1.6rem;
     }
 
     #navbar-modal .modal-social-wraper #modal-facebook-icon {
-        height: 23px;
-        width: 23px;
+        height: 24px;
+        width: 24px;
 
     }
 
     #navbar-modal .modal-social-wraper #modal-insta-icon {
-        height: 32px;
-        width: 32px;
+        height: 33px;
+        width: 33px;
     }
 
     #navbar-modal .modal-social-wraper #modal-x-icon {
 
-        height: 21px;
-        width: 21px;
+        height: 22px;
+        width: 22px;
     }
 
-
-
     /************** FOOTER SECTION ***********/
-    /* #footer {
-        margin-top: auto;
-    } */
 
     .footer-wraper {
         margin-top: 20px;
@@ -652,14 +681,38 @@ header .rectangle {
         margin-top: 10px;
     }
 
+    .footer-wraper .availability-wraper,
+    .footer-wraper .address-wraper {
+        text-align: left;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .footer-wraper .address-wraper {
+        position: relative;
+        right: 3px;
+    }
+
+    .footer-wraper .availability-wraper {
+        position: relative;
+        left: 30px;
+    }
+
+
     #footer .container-fluid p {
         margin: 7px;
     }
 
+    #footer .footer-logo-wraper {
+        /* text-align: center; */
+        padding-left: 20px;
+    }
+
     #footer #logo-footer {
+        margin: 0 auto;
         height: 150px;
-        max-width: 80%;
-        margin-left: 50px;
+        width: 80%;
+        max-width: 400px;
     }
 
     .footer-wraper .social-wraper {
