@@ -1,8 +1,10 @@
 /****
-* Navbar & Footer styling 
+* Navbar, Footer & Modal menu stylings and animations
 *
 * @author Javier Bastande 
 **/
+
+
 
 /*************** CLASSLIST ANIMATIONS*/
 .showMenu {
@@ -415,7 +417,7 @@ header .rectangle {
     }
 
     header nav .show ul:last-child {
-        padding-bottom: 20px;
+        padding-bottom: 18px;
     }
 
     /********** MODAL MENU */
@@ -436,16 +438,16 @@ header .rectangle {
     }
 
     #navbar-modal .modal-container ul {
-        margin-top: 40px;
-        margin-bottom: 50px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     #navbar-modal .modal-container ul li {
-        margin: 10px auto;
+        margin: 8px auto;
     }
 
     #navbar-modal .modal-container .nav-link {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     #navbar-modal .modal-social-wraper a {
@@ -469,8 +471,8 @@ header .rectangle {
     }
 
     #navbar-modal .modal-social-wraper #modal-x-icon {
-        height: 25px;
-        width: 25px;
+        height: 27px;
+        width: 27px;
     }
 
 
@@ -619,7 +621,7 @@ header .rectangle {
     }
 
     #navbar-modal .modal-container .nav-link {
-        font-size: 1.1rem;
+        font-size: 1.050rem;
     }
 
     #navbar-modal .modal-container ul {
@@ -655,8 +657,8 @@ header .rectangle {
 
     #navbar-modal .modal-social-wraper #modal-x-icon {
 
-        height: 22px;
-        width: 22px;
+        height: 26px;
+        width: 26px;
     }
 
     /************** FOOTER SECTION ***********/
@@ -704,7 +706,6 @@ header .rectangle {
     }
 
     #footer .footer-logo-wraper {
-        /* text-align: center; */
         padding-left: 20px;
     }
 
@@ -726,8 +727,8 @@ header .rectangle {
     }
 
     .footer-wraper #footer-x-icon {
-        height: 22px;
-        width: 22px;
+        height: 26px;
+        width: 26px;
         margin-left: 8px;
     }
 
