@@ -511,7 +511,6 @@ header .rectangle {
         max-height: 250px;
         margin: 0;
         padding: 0;
-
     }
 
     #footer .container-fluid p {
@@ -716,15 +715,13 @@ header .rectangle {
 
     .footer-wraper .address-wraper {
         position: relative;
-        right: 25px;
+        right: 20px;
     }
 
     .footer-wraper .availability-wraper {
         position: relative;
         left: 20px;
     }
-
-
 
     #footer .footer-logo-wraper {
         padding-left: 20px;

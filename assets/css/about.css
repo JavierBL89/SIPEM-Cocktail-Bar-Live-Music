@@ -652,7 +652,7 @@
     }
 
     #story .decorator img:first-child {
-        height: 150px;
+        height: 100px;
         width: 50%;
         z-index: -1;
     }
@@ -662,17 +662,18 @@
         width: 150px;
         position: relative;
         z-index: 1;
-        top: 120px;
+        top: 90px;
         right: 100px;
         height: 110px;
     }
 
     .story-wraper {
         margin: 0 auto;
+        width: 100%;
     }
 
     .story-wraper h1 {
-        font-size: 40px;
+        font-size: 2rem;
         margin-bottom: 0;
     }
 
@@ -682,10 +683,11 @@
 
     #story .story-wraper .story-container {
         padding: 0;
+        width: 95%;
     }
 
     #story #story-img-wraper {
-        width: 85%;
+        width: 100%;
         min-height: 600px;
         background-image: url("../images/about-simpem-img.jpg");
         background-position: center;
@@ -696,16 +698,23 @@
 
     #story .about-desc-wraper {
         margin-top: 30px;
-        padding-right: 50px;
-        padding-left: 50px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+
+
+    /********* john section**/
+    #john .john-wraper {
+        width: 100%;
     }
 
     #john #about-heading {
         text-align: center;
-        font-size: 45px;
+        font-size: 2.5rem;
     }
 
-    /********* john section**/
+
     #john .pin-holder {
         background-image: url("../images/pin.png");
         background-position: center;
@@ -739,7 +748,9 @@
     }
 
     #john .john-wraper .john-container {
-        padding: 100px 20px;
+        width: 95%;
+        padding: 100px 0;
+        margin: 0 auto;
 
     }
 
@@ -750,14 +761,15 @@
     }
 
     #john .john-desc-wraper {
-        padding-right: 50px;
-        padding-left: 50px;
+        padding-right: 30px;
+        padding-left: 30px;
+        letter-spacing: 0.5px;
+        line-height: 32px;
     }
 
     #john .john-wraper #john-img-wraper {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
-        min-height: 520px;
         background-image: url("../images/john.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -769,7 +781,7 @@
     #alex #alex-decorator {
         position: absolute;
         right: 0;
-        margin-top: 1000px;
+        margin-top: 850px;
         width: inherit;
         max-width: inherit;
     }
@@ -786,8 +798,8 @@
     }
 
     #alex-decorator .decorator img:first-child {
-        max-height: 40px;
-        width: 200px;
+        max-height: 70px;
+        width: 280px;
         max-width: 200px;
         position: relative;
         z-index: 1;
@@ -797,20 +809,25 @@
     }
 
     #alex .alex-wraper {
+        width: 100%;
+    }
+
+    #alex .alex-wraper .alex-container {
+        width: 95%;
+        margin: 0 auto;
         color: #111111;
         padding-bottom: 250px;
     }
 
     #alex .alex-desc-wraper {
-        max-width: 700px;
-        padding: 100px 50px;
+        padding: 70px 30px;
         margin: 0 auto;
+        letter-spacing: 0.5px;
+        line-height: 32px;
     }
 
     #alex .alex-wraper #alex-img-wraper {
-        width: 90%;
-        height: 500px;
-        max-height: 500px;
+        width: 100%;
         background-image: url("../images/alex.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -820,13 +837,17 @@
 
     /******call to action ****/
     .call-action-wraper {
-        min-height: fit-content;
-        max-height: 300px;
+        width: 100%;
+        height: 130px;
     }
 
     #call-action h4 {
-        font-size: 30px;
-        letter-spacing: 0.5;
+        font-size: 1.5rem;
+        letter-spacing: 0.5px;
+    }
+
+    .call-action-wraper .call-action-container {
+        height: inherit;
     }
 
     .call-action-wraper .call-action-container .row {
@@ -838,8 +859,6 @@
         position: absolute;
         left: 0;
         width: 100%;
-        min-height: 202px;
-        max-height: 270px;
         background-image: url("../images/call-action-img.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -847,16 +866,16 @@
     }
 
     .call-action-wraper a {
-        height: 55px;
-        font-size: 18px;
+        height: 50px;
+        font-size: 1rem;
         font-weight: 500;
         margin-top: 20px;
-        padding-top: 12px;
+        padding-top: 8px;
         letter-spacing: 1.5px;
         color: #ffffff;
         border: solid 1px #ffffff;
         border-radius: 0;
-        width: 70%;
+        width: 60%;
         background-color: transparent;
         text-transform: uppercase;
         transition: 0.5s;
