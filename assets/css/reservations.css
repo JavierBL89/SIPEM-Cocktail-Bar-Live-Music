@@ -598,6 +598,10 @@ input[type="checkbox"]:checked {
         margin-top: 25px;
     }
 
+    #contact .contact-wraper .office-hours-wraper p {
+        font-size: 1rem;
+    }
+
     /************** CONTACT FORM */
     #contact .contact-form-wraper textarea {
         margin: 50px 5px 0 5px;

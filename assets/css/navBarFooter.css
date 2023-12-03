@@ -355,8 +355,10 @@ header .rectangle {
     }
 
     .footer-wraper #footer-insta-icon {
-        height: 40px;
-        width: 40px;
+        height: 39px;
+        width: 39px;
+        position: relative;
+        bottom: 5px;
     }
 
     .footer-wraper p {
@@ -449,8 +451,6 @@ header .rectangle {
 
     #navbar-modal .modal-container ul {
         height: 100%;
-        margin-top: 30px;
-        margin-bottom: 30px;
         justify-content: space-evenly;
     }
 
@@ -646,8 +646,6 @@ header .rectangle {
 
     #navbar-modal .modal-container ul {
         height: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
         height: 100%;
         justify-content: space-evenly;
     }
