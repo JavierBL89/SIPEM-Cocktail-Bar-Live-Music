@@ -112,7 +112,7 @@ a {
 /*********** RESERVATIONS PAGE SHARED PROPERTIES*/
 #reservations-main-wraper h4,
 #about-main-wraper h4 {
-    font-size: 80px;
+    font-size: 4rem;
 }
 
 /** font family*/
@@ -273,10 +273,6 @@ input[type="checkbox"]:checked {
         padding-right: 5%;
 
     }
-
-    /* .reservations-wraper .reservations-container>.row {
-        margin: 0 auto;
-    } */
 
 
     .reservations-wraper .reservation-text-wraper {
@@ -943,6 +939,7 @@ input[type="checkbox"]:checked {
         margin: 0 auto;
         width: 80%;
         max-width: 600px;
+        padding: 30px 0 50px;
     }
 
     .contact-wraper .contact-text-wraper {
@@ -994,6 +991,7 @@ input[type="checkbox"]:checked {
         width: 85%;
         margin: 120px auto;
         max-width: 650px;
+        padding: 40px;
     }
 
     #reservations-review p {

@@ -23,7 +23,7 @@
 #call-action h4,
 #story .story-wraper,
 #john .john-wraper,
-#alex .alex-,
+#alex .alex-desc-wraper,
 .call-action-heading {
     font-family: "League Spartan";
     font-size: 1rem;
@@ -35,13 +35,6 @@
 #alex .alex-wraper {
     min-height: 600px;
     width: 100%;
-}
-
-#story .story-wraper .story-container,
-#john .john-wraper .john-container,
-#alex .alex-wraper .alex-container {
-    margin: 0 auto;
-    min-width: fit-content;
 }
 
 #story #story-img-wraper {
@@ -139,44 +132,35 @@
 }
 
 /****** call to action **/
-.call-action-wraper {
-    min-height: 200px;
-    max-height: 320px;
-}
 
 .call-action-wraper .call-action-container {
-    min-height: inherit;
-    max-height: inherit;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
 }
 
 .call-action-wraper .call-action-container .row {
-    height: inherit;
     align-items: center;
     text-align: center;
     position: relative;
+    width: 1000px;
+    margin: 0 auto;
     z-index: 1;
     color: #ffffff;
-    margin: 110px auto auto;
-    width: 1000px;
-    max-width: 1200px;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 #call-action h4 {
-    font-size: 50px;
-    letter-spacing: 0.5;
+    font-size: 2.5rem;
+    letter-spacing: 0.5px;
 }
 
 .call-action-wraper .call-action-img-holder {
     position: absolute;
     left: 0;
     width: 100%;
-    min-height: 300px;
-    max-height: 320px;
+    height: 200px;
     background-image: url("../images/call-action-img.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -250,7 +234,7 @@
     }
 
     .story-wraper h1 {
-        font-size: 65px;
+        font-size: 3rem;
         margin-bottom: 0;
     }
 
@@ -270,9 +254,8 @@
     #john .john-wraper .john-container,
     #alex .alex-wraper .alex-container {
         margin: 0 auto;
-        min-width: fit-content;
-        min-width: 1200px;
-        max-width: 1300px;
+        width: 1300px;
+        max-width: 100%;
         padding: 200px 60px 100px;
     }
 
@@ -290,9 +273,10 @@
     }
 
     #story .about-desc-wraper,
-    #john .john-desc-wraper {
+    #john .john-desc-wraper,
+    #alex .alex-desc-wraper {
         padding: 70px;
-        font-size: 23px;
+        font-size: 1.1rem;
     }
 
 
@@ -393,10 +377,14 @@
         background-size: cover;
     }
 
+    .call-action-wraper .call-action-container {
+        height: inherit;
+    }
+
+
     /******call to action ****/
     .call-action-wraper {
-        min-height: 200px;
-        max-height: 320px;
+        height: 200px;
     }
 
 
@@ -451,14 +439,14 @@
         margin-bottom: 20px;
     }
 
-    #story .story-wraper .story-container .row {
-        padding: 0;
+    #story .story-wraper .story-container {
+        width: 80%;
+        max-width: 600px;
         margin: 0 auto;
     }
 
     #story #story-img-wraper {
-        width: 85%;
-        min-height: 600px;
+        width: 90%;
         background-image: url("../images/about-simpem-img.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -470,14 +458,17 @@
         margin: 30px auto 5px;
         padding-right: 90px;
         max-width: 700px;
+        line-height: 35px;
+        letter-spacing: 0.5px;
     }
 
-    #john #about-heading {
-        text-align: center;
-        font-size: 65px;
-    }
 
     /**** john*/
+    #john #about-heading {
+        text-align: center;
+        font-size: 3.2rem;
+    }
+
     #john .pin-holder {
         background-image: url("../images/pin.png");
         background-position: center;
@@ -510,29 +501,32 @@
         margin-left: 7px;
     }
 
-    #john .john-wraper .john-container {
-        padding: 100px 20px;
-        max-width: 700px;
-
-    }
-
     #john .john-wraper {
         background-color: #111111;
         color: #ffffff;
         padding-bottom: 60px;
+        width: 100%;
+
+    }
+
+    #john .john-wraper .john-container {
+        padding: 100px 20px;
+        max-width: 600px;
+        margin: 0 auto;
 
     }
 
     #john .john-desc-wraper {
         padding-right: 90px;
         max-width: 700px;
+        line-height: 35px;
+        letter-spacing: 0.5px;
 
     }
 
     #john .john-wraper #john-img-wraper {
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
-        min-height: 520px;
         background-image: url("../images/john.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -566,19 +560,28 @@
     }
 
     #alex .alex-wraper {
+        width: 100%;
+    }
+
+    #alex .alex-wraper .alex-container {
+        width: 100%;
+        width: 600px;
+        margin: 0 auto;
         color: #111111;
-        padding-bottom: 250px;
+        padding-top: 50px;
+        padding-bottom: 200px;
     }
 
     #alex .alex-desc-wraper {
         max-width: 700px;
         padding: 100px 70px;
         margin: 0 auto;
+        letter-spacing: 0.5px;
+        line-height: 35px;
     }
 
     #alex .alex-wraper #alex-img-wraper {
-        width: 80%;
-        min-height: 520px;
+        width: 85%;
         background-image: url("../images/alex.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -588,13 +591,13 @@
 
     /******call to action ****/
     .call-action-wraper {
-        min-height: 200px;
-        max-height: 300px;
+        height: 170px;
     }
 
+
     #call-action h4 {
-        font-size: 40px;
-        letter-spacing: 0.5;
+        font-size: 2rem;
+        letter-spacing: 0.5px;
     }
 
     .call-action-wraper .call-action-container .row {
@@ -615,11 +618,11 @@
     }
 
     .call-action-wraper a {
-        height: 65px;
+        height: 2.5rem;
         font-size: 20px;
         font-weight: 500;
         margin-top: 20px;
-        padding-top: 15px;
+        padding-top: 8px;
         letter-spacing: 1.5px;
         color: #ffffff;
         border: solid 1px #ffffff;
