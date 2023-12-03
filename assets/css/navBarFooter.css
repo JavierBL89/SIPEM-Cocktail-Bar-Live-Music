@@ -433,17 +433,25 @@ header .rectangle {
     }
 
     #navbar-modal .modal-container {
+        justify-content: space-around;
+        height: 100vh;
         text-align: center;
         margin: 0 auto;
     }
 
+    #navbar-modal .modal-container .modal-menu-holder {
+        height: 80%;
+    }
+
     #navbar-modal .modal-container ul {
+        height: 100%;
         margin-top: 30px;
         margin-bottom: 30px;
+        justify-content: space-evenly;
     }
 
     #navbar-modal .modal-container ul li {
-        margin: 8px auto;
+        margin: 0 auto;
     }
 
     #navbar-modal .modal-container .nav-link {
@@ -452,6 +460,7 @@ header .rectangle {
 
     #navbar-modal .modal-social-wraper a {
         margin: auto 7px;
+        text-decoration: none;
     }
 
     #close-icon {
@@ -531,8 +540,6 @@ header .rectangle {
     #footer #footer-facebook-icon,
     #footer #footer-insta-icon,
     #footer #footer-x-icon {
-        height: 24px;
-        width: 24px;
         margin-left: 8px;
     }
 
@@ -544,6 +551,11 @@ header .rectangle {
     #footer #footer-insta-icon {
         height: 39px;
         width: 39px;
+    }
+
+    #footer #footer-x-icon {
+        height: 28px;
+        width: 28px;
     }
 
     .footer-wraper p {
@@ -618,6 +630,11 @@ header .rectangle {
     #navbar-modal .modal-container {
         text-align: center;
         margin: 0 auto;
+        height: 100vh;
+    }
+
+    #navbar-modal .modal-container .modal-menu-holder {
+        height: 80%;
     }
 
     #navbar-modal .modal-container .nav-link {
@@ -625,12 +642,15 @@ header .rectangle {
     }
 
     #navbar-modal .modal-container ul {
-        margin-top: 40px;
+        height: 100%;
+        margin-top: 20px;
         margin-bottom: 20px;
+        height: 100%;
+        justify-content: space-evenly;
     }
 
     #navbar-modal .modal-container ul li {
-        margin: 7px auto;
+        margin: 0 auto;
     }
 
     #navbar-modal .modal-social-wraper a {
@@ -692,18 +712,15 @@ header .rectangle {
 
     .footer-wraper .address-wraper {
         position: relative;
-        right: 3px;
+        right: 25px;
     }
 
     .footer-wraper .availability-wraper {
         position: relative;
-        left: 30px;
+        left: 20px;
     }
 
 
-    #footer .container-fluid p {
-        margin: 7px;
-    }
 
     #footer .footer-logo-wraper {
         padding-left: 20px;
@@ -739,11 +756,6 @@ header .rectangle {
 
     }
 
-    .footer-wraper p {
-        margin: 6px;
-        font-size: 0.7rem;
-    }
-
     .footer-wraper .container-fluid .col {
         text-align: center;
     }
@@ -752,6 +764,11 @@ header .rectangle {
         text-decoration: none;
     }
 
+    #footer .footer-wraper .row p,
+    #footer .footer-wraper .address-wraper p {
+        margin: 6px;
+        font-size: 0.9rem;
+    }
 
     #footer .footer-copyright {
         width: 100%;
