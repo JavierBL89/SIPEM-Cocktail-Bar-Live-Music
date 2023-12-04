@@ -358,7 +358,7 @@ header .rectangle {
         height: 39px;
         width: 39px;
         position: relative;
-        bottom: 5px;
+        bottom: 2px;
     }
 
     .footer-wraper p {
