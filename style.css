@@ -1,0 +1,230 @@
+/* BEAVER: HEX: #9E7F66;
+COD-GREY: #111111;
+MIRAGE: |#17192B;
+ELBONY-CLAY: #242B37;
+SHUTLE-GRAY: #5C6779; */
+
+/*
+font-family: 'League Spartan', sans-serif;
+font-family: 'Sanchez', serif;
+*/
+
+
+
+
+#upcoming-header {
+    height: 200px;
+}
+
+/************** MAIN **************/
+.section1 {
+    background-color: #ffffff;
+    font-family: 'League Spartan', sans-serif;
+    padding: 40px 0;
+    position: relative;
+}
+
+.section2,
+.section3 {
+    background-color: #ffffff;
+    font-family: 'League Spartan', sans-serif;
+    padding: 40px 0;
+}
+
+.section2 img,
+.section3 img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 10px 8px #0000001a;
+}
+
+/* Estilizando o h3 */
+.section2 h3,
+.section3 h3 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* Estilizando o p */
+.section2 p,
+.section3 p {
+    font-size: 1.25rem;
+}
+
+.buttons button {
+    background-color: transparent;
+    color: #333;
+    font-size: 1.125rem;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 245px;
+    height: 64px;
+}
+
+
+.reservation-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Overlay color */
+    z-index: 1;
+}
+
+.reservation-footer .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.reservation-heading {
+    font-family: 'League Spartan', sans-serif;
+    /* Your font may vary */
+    font-size: 2.5rem;
+    /* Adjust size to match design */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.btn-footer {
+    font-family: 'League Spartan', sans-serif;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 15px 35px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    /* Remove underline from anchor tags */
+    display: inline-block;
+    /* Necessary for anchors to behave like buttons */
+}
+
+.btn-footer:hover {
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    /* Remove underline from anchor tags on hover */
+}
+
+/************** Upcoming Events Section **************/
+#story-decorator .decorator {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+
+.upcoming-events {
+    background-color: #ffffff;
+    /* Or any other color as per design */
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+}
+
+.upcoming-events h1 {
+    font-size: 4rem;
+    color: #242B37;
+    margin: 70px 0;
+
+}
+
+.events {
+    display: flex;
+
+}
+
+.event {
+    padding: 20px;
+}
+
+.upcoming-events .event {
+    margin-bottom: 40px;
+    /* Adjust as per design */
+}
+
+.event img {
+    width: 350px;
+    height: 300px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 50px -12px #333;
+}
+
+.upcoming-events .event h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    /* Adjust as per design */
+    color: #242B37;
+}
+
+.upcoming-events .event p {
+    font-size: 1.3rem;
+    /* Adjust as per design */
+    color: #242B37;
+    /* Shuttle Gray */
+    margin-bottom: 40px;
+    /* Adjust as per design */
+}
+
+.upcoming-events .event .event-time {
+    color: #111111;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+/* Newsletter Section */
+.newsletter {
+    color: #242B37;
+    padding: 60px 0;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 2.5rem;
+    font-family: 'League Spartan';
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.newsletter p {
+    font-size: 1.25rem;
+    /* Adjust as per design */
+    margin-bottom: 40px;
+    /* Adjust as per design */
+}
+
+.newsletter input[type="email"] {
+    padding: 12px;
+    margin-right: 3px;
+    border: none;
+    border-radius: 0;
+    background-color: rgba(217, 217, 217, 0.36);
+    width: 344px;
+    height: 40px;
+}
+
+.newsletter button {
+    background-color: #111111;
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-align: center;
+    width: 108px;
+    height: 40px;
+    border: none;
+    letter-spacing: 2.5px;
+}
+
+.newsletter button:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #111111;
+    color: #111111;
+}

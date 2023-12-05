@@ -122,8 +122,11 @@ a {
 #reservations-review p,
 #about-main-wraper p {
     font-size: 1.25rem;
-    ;
     line-height: 30px;
+}
+
+#reservations-review p {
+    font-family: 'Sanchez', sans-serif;
 }
 
 /**** colors ***/
@@ -185,6 +188,11 @@ header nav .nav-link,
     cursor: url("../images/pointer.png"), auto;
 }
 
+#reservations-main-wraper button[type="submit"]:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 /*** containers shadow*/
 /* https://cssgenerator.org/box-shadow-css-generator.html */
 .reservations-wraper .reservation-form-wraper {
@@ -237,6 +245,23 @@ input[type="checkbox"]:checked {
 
 }
 
+#reservations-review .double-gold-line-holder {
+    width: 100%;
+    height: 2px;
+    background-image: url("../images/double-gold-line.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#reservations-review .rh-decorator-holder {
+    width: 50%;
+    height: 50px;
+    background-image: url("../images/rh.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /*************************** Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -373,17 +398,7 @@ input[type="checkbox"]:checked {
         transition: 0.5s;
     }
 
-    #reservations-main-wraper button[type="submit"]:hover {
-        border: solid 1px #111111;
-        transition: 0.5s;
-        color: #111111;
-        cursor: url("../images/pointer.png"), auto;
-    }
 
-    #reservations-main-wraper button[type="submit"]:focus {
-        outline: none;
-        box-shadow: none;
-    }
 
     /*  Remove default arrows on input type=number */
     /*  Code taken from next link */
@@ -604,7 +619,6 @@ input[type="checkbox"]:checked {
 
     #contact .contact-form-wraper textarea:active {
         text-align: left;
-        /* padding: 0; */
     }
 
     /************* REVIEW SECTION**/
@@ -622,6 +636,23 @@ input[type="checkbox"]:checked {
     #reservations-review .review-container {
         max-width: 1300px;
         margin: 0 auto;
+    }
+
+    #reservations-review .double-line-decorator-wraper {
+        margin: 250px auto 0px;
+        width: 80%;
+        max-width: 620px;
+    }
+
+    #reservations-review .rh-decorator-wraper {
+        margin: 0 auto 250px;
+        width: 80%;
+        max-width: 420px;
+    }
+
+    #reservations-review .rh-decorator-holder {
+        width: 100%;
+        height: 40px;
     }
 
     #reservations-review .review-container .text-wraper {
@@ -762,13 +793,6 @@ input[type="checkbox"]:checked {
         background-color: #111111;
         text-transform: uppercase;
         transition: 0.5s;
-    }
-
-    #reservations-main-wraper button[type="submit"]:hover {
-        border: solid 1px #111111;
-        transition: 0.5s;
-        color: #111111;
-        cursor: url("../images/pointer.png"), auto;
     }
 
     /*  Remove default arrows on input type=number */
@@ -977,10 +1001,27 @@ input[type="checkbox"]:checked {
     }
 
     #reservations-review .review-container {
-        width: 85%;
+        width: 90%;
         margin: 120px auto;
         max-width: 650px;
         padding: 40px;
+    }
+
+    #reservations-review .double-line-decorator-wraper {
+        margin: 50px auto 180px;
+        width: 80%;
+        max-width: 480px;
+    }
+
+    #reservations-review .rh-decorator-wraper {
+        margin: 200px auto 50px;
+        width: 80%;
+        max-width: 520px;
+    }
+
+    #reservations-review .rh-decorator-holder {
+        width: 100%;
+        height: 30px;
     }
 
     #reservations-review p {
@@ -1000,7 +1041,8 @@ input[type="checkbox"]:checked {
 
     #reservations-main-wraper h4 {
         min-width: fit-content;
-        font-size: 1.875rem;
+        font-size: 2.1rem;
+        margin-bottom: 20px;
     }
 
     /***************** RESERVATIONS SECTION */
@@ -1379,7 +1421,6 @@ input[type="checkbox"]:checked {
 
     #reservations-main-wraper .office-hours-wraper p {
         font-size: 1.063rem;
-        ;
         padding-right: 0px;
     }
 
@@ -1392,7 +1433,6 @@ input[type="checkbox"]:checked {
     #contact .contact-form-wraper textarea {
         margin: 50px 5px 20px 5px;
         font-size: 1.25rem;
-        ;
         text-align: left;
         padding: 15px;
         width: 97%;
@@ -1409,7 +1449,6 @@ input[type="checkbox"]:checked {
     #contact .contact-form-wraper textarea:focus {
         text-align: left;
         letter-spacing: 0.5px;
-
     }
 
     #contact .contact-form-wraper textarea:active {
@@ -1426,6 +1465,24 @@ input[type="checkbox"]:checked {
         width: 95%;
         margin: 0 auto;
         padding: 120px 10px;
+    }
+
+    #reservations-review .double-line-decorator-wraper {
+        margin: 40px auto 100px;
+        width: 300px;
+        max-width: 80%;
+    }
+
+    #reservations-review .rh-decorator-wraper {
+        margin: 100px auto 50px;
+        width: 420px;
+        max-width: 80%;
+
+    }
+
+    #reservations-review .rh-decorator-holder {
+        height: 20px;
+        width: 100%;
     }
 
     #reservations-review p {

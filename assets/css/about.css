@@ -12,6 +12,17 @@ section {
     padding: 0;
 }
 
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "League Spartan", sans-serif;
+}
+
+
 /********** story section**/
 #story-decorator .decorator,
 #alex-decorator .decorator {
@@ -25,7 +36,6 @@ section {
     z-index: 1;
 }
 
-#call-action h4,
 #story .story-wraper,
 #john .john-wraper,
 #alex .alex-desc-wraper,
@@ -179,7 +189,6 @@ section {
     height: 75px;
     font-size: 20px;
     font-weight: 500;
-    padding-top: 20px;
     letter-spacing: 1.5px;
     color: #ffffff;
     border: solid 1px #ffffff;
@@ -400,7 +409,10 @@ section {
         height: 200px;
     }
 
+    .call-action-wraper a {
+        padding-top: 20px;
 
+    }
 }
 
 
@@ -735,7 +747,7 @@ section {
     }
 
     #story .about-desc-wraper p {
-        margin-top: 70px;
+        margin-top: 50px;
 
     }
 
@@ -892,7 +904,7 @@ section {
     }
 
     .call-action-wraper .call-action-container .row {
-        margin-top: 40px;
+        margin-top: 30px;
         max-width: 700px;
     }
 
@@ -900,6 +912,7 @@ section {
         position: absolute;
         left: 0;
         width: 100%;
+        height: 160px;
         background-image: url("../images/call-action-img.jpg");
         background-position: center;
         background-repeat: no-repeat;
@@ -907,11 +920,11 @@ section {
     }
 
     .call-action-wraper a {
-        height: 50px;
+        height: 45px;
         font-size: 1rem;
         font-weight: 500;
         margin-top: 20px;
-        padding-top: 10px;
+        /* padding-top: 0; */
         letter-spacing: 1.5px;
         color: #ffffff;
         border: solid 1px #ffffff;
