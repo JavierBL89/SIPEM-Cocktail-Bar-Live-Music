@@ -13,8 +13,6 @@ const contactComment = document.getElementById("contact-form-comment");
 
 
 /** START CONTACT FORM VALIDATION */
-// contactForm.addEventListener("submit", function (event) {
-//     alert("poti")
 const validContact = (event) => {
     validateForm();
     let countSuccessfulInputs = document.getElementsByClassName("success");
@@ -31,8 +29,6 @@ const validContact = (event) => {
 
 
 
-
-
 /**
  *Function initializes form inputs validation
  */
@@ -43,7 +39,6 @@ function validateForm() {
     const contactEmailValue = contactEmail.value.trim();
     const contactCommentValue = contactComment.textContent;
 
-    console.log(contactNameValue + " " + contactEmailValue + " " + contactCommentValue);
     checkInput(contactNameValue
         , contactEmailValue, contactCommentValue);
 
@@ -101,10 +96,10 @@ function validEmailFormat(contactEmailValue) {
     const validRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (contactEmailValue.match(validRegex)) {
         wrongEmail.classList.remove("wrongEmail");
-        setSuccesClass(email);
+        setSuccesClass(contactEmail);
     } else {
         // clear input
-        let wrongEmail = document.getElementById("email");
+        let wrongEmail = document.getElementById("contact-form-email");
         wrongEmail.value = "";
         wrongEmail.setAttribute("placeholder", "Enter a valid email e.g 'sipmen@sipem.com'");
         wrongEmail.classList.add("wrongEmail");
@@ -117,10 +112,18 @@ function validEmailFormat(contactEmailValue) {
  * @param {DOM form element} input 
  */
 function setErrorClass(input) {
-    input.nextElementSibling.classList.remove("inputBaseLine");
-    input.nextElementSibling.classList.remove("success");
-    input.nextElementSibling.classList.add("inputError");
-    input.classList.add("redPlaceholder")
+    console.log(input);
+    if (input === contactComment) {
+        input.nextElementSibling.classList.remove("inputBaseLine");
+        input.nextElementSibling.classList.remove("success");
+        input.classList.add("redPlaceholder")
+    } else {
+        input.nextElementSibling.classList.remove("inputBaseLine");
+        input.nextElementSibling.classList.remove("success");
+        input.nextElementSibling.classList.add("inputError");
+        input.classList.add("redPlaceholder")
+    }
+
 
 }
 

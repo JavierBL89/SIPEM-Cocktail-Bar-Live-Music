@@ -1,0 +1,187 @@
+/* CSS for Cocktail Sections */
+#signature-header {
+    height: 200px;
+}
+
+#CocktailBackground {
+    background: linear-gradient(to bottom, rgb(127, 203, 165), #5a7590);
+}
+
+/* Style for Cocktail Overview */
+.cocktail-overview {
+    padding-top: 50px;
+}
+
+/* Style for cocktail section */
+.cocktail-section {
+    padding: 50px 0;
+}
+
+
+/* Style for cocktail image*/
+.cocktail-section img {
+    max-width: 100%;
+    max-height: 750px;
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Image flipping
+.cocktail-section img:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+.cocktail-section img:active {
+    transform: rotateY(180deg);
+}
+*/
+
+/* Style for cocktail info */
+.cocktail-info {
+    padding: 20px;
+}
+
+.cocktail-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cocktail-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* CSS for Minigame */
+#minigame-section {
+    padding: 50px;
+}
+
+#minigame {
+    background-size: cover;
+    text-align: center;
+}
+
+#board {
+    max-width: 45%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(112, 47, 47);
+    border: 10px solid rgb(163, 161, 161);
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#board .card {
+    margin: 5px;
+    border: none;
+    background-color: #111111;
+    zoom: 1.02;
+}
+
+
+
+.card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
+/************** FOOTER WRAPER ***********/
+#footer {
+    margin-top: auto;
+}
+
+.footer-wraper {
+    margin-top: 100px;
+    min-height: 260px;
+    background-color: #333333;
+}
+
+.footer-wraper .container-fluid {
+    min-width: 1000px;
+    max-width: 1150px;
+    padding: 40px 100px;
+    justify-content: space-evenly;
+    text-align: start;
+}
+
+#logo-footer {
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 35px auto auto;
+}
+
+.footer-wraper #icon-location {
+    height: 15px;
+}
+
+.footer-wraper .social-wraper {
+    margin-top: 30px;
+    padding-left: 60px;
+}
+
+.footer-wraper #facebook-icon,
+.footer-wraper #insta-icon,
+.footer-wraper #x-icon {
+    height: 22px;
+    width: 22px;
+    margin-left: 8px;
+}
+
+.footer-wraper #insta-icon {
+    height: 35px;
+    width: 35px;
+}
+
+.footer-wraper p {
+    margin: 5px;
+    font-size: 0.7rem;
+    color: #FFFFF0;
+}
+
+.footer-wraper .container-fluid .col {
+    text-align: center;
+}
+
+.footer-wraper a {
+    color: #FFFFF0;
+    text-decoration: none;
+}
+
+#sipem-email {
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.footer-copyright p {
+    text-align: center;
+    color: #FFFFF0;
+    margin-bottom: 0;
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+
+.authors-container {
+    background-color: #B76E79;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.authors-container>p,
+.names-wraper>p {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333333;
+}
+
+.names-wraper p {
+    color: #FFF5E1;
+}
