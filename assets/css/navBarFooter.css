@@ -264,10 +264,12 @@ header .rectangle {
 }
 
 .authors-container {
-    max-width: 1300px;
     background-color: #9E7F66;
-    margin: 0 auto;
     padding: 10px 0;
+}
+
+.names-wraper {
+    margin: 0 auto;
 }
 
 .authors-container>p,
@@ -677,7 +679,6 @@ header .rectangle {
     }
 
     #navbar-modal .modal-social-wraper #modal-x-icon {
-
         height: 26px;
         width: 26px;
     }
@@ -685,7 +686,6 @@ header .rectangle {
     /************** FOOTER SECTION ***********/
 
     .footer-wraper {
-        margin-top: 20px;
         min-height: 460px;
         width: 100%;
     }
