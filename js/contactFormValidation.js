@@ -9,25 +9,20 @@ const contactForm = document.querySelector("#contact #contact-form");
 const contactName = document.getElementById("contact-form-fullname");
 const contactEmail = document.getElementById("contact-form-email");
 const contactComment = document.getElementById("contact-form-comment");
-
+let errorMessage = "";
 
 
 /** START CONTACT FORM VALIDATION */
 const validContact = (event) => {
     validateForm();
     let countSuccessfulInputs = document.getElementsByClassName("success");
-    console.log(countSuccessfulInputs.length)
-
-    if (countSuccessfulInputs.length === 8) {
-        alert("Thanks for booking a table with us! : )")
-        contactForm.submit();
+    if (countSuccessfulInputs.length === 3) {
+        alert("We'll get back to you as soon as posible! : )")
     } else {
         event.preventDefault();
         event.stopPropagation();
     }
 }
-
-
 
 /**
  *Function initializes form inputs validation
@@ -37,7 +32,7 @@ function validateForm() {
     // catch input values and eliminate any white spaces
     const contactNameValue = contactName.value.trim();
     const contactEmailValue = contactEmail.value.trim();
-    const contactCommentValue = contactComment.textContent;
+    const contactCommentValue = contactComment.value;
 
     checkInput(contactNameValue
         , contactEmailValue, contactCommentValue);
@@ -45,7 +40,6 @@ function validateForm() {
 }
 
 function checkInput(contactNameValue, contactEmailValue, contactCommentValue) {
-
     if (contactNameValue === "") {
         errorMessage = "This field cannot be empty";
         showErrorMessage(contactName, errorMessage)
@@ -59,19 +53,15 @@ function checkInput(contactNameValue, contactEmailValue, contactCommentValue) {
         showErrorMessage(contactEmail, errorMessage);
         setErrorClass(contactEmail);
     } else {
-        // let isValid = validEmailFormat(emailValue);
         validEmailFormat(contactEmailValue);
     }
-    if (contactCommentValue === "") {
+    if (contactCommentValue.length === 0) {
         errorMessage = "Tell us how we can help";
         showErrorMessage(contactComment, errorMessage);
         setErrorClass(contactComment);
     } else {
-        // let isValid = validEmailFormat(emailValue);
-        validEmailFormat(contactComment);
+        setSuccesClass(contactComment);
     }
-
-
 }
 
 
@@ -90,7 +80,7 @@ function showErrorMessage(input, message) {
  */
 function validEmailFormat(contactEmailValue) {
     errorMessage = "Please enter a valid email caramba@whatever.domain'";
-    let emailFormatError = document.getElementById("booking-emailFormatError");
+    let wrongEmail = document.getElementById("contact-form-email");
 
     // let isValid = false;
     const validRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -99,7 +89,6 @@ function validEmailFormat(contactEmailValue) {
         setSuccesClass(contactEmail);
     } else {
         // clear input
-        let wrongEmail = document.getElementById("contact-form-email");
         wrongEmail.value = "";
         wrongEmail.setAttribute("placeholder", "Enter a valid email e.g 'sipmen@sipem.com'");
         wrongEmail.classList.add("wrongEmail");
@@ -112,7 +101,6 @@ function validEmailFormat(contactEmailValue) {
  * @param {DOM form element} input 
  */
 function setErrorClass(input) {
-    console.log(input);
     if (input === contactComment) {
         input.nextElementSibling.classList.remove("inputBaseLine");
         input.nextElementSibling.classList.remove("success");
@@ -136,7 +124,6 @@ function setSuccesClass(input) {
     input.classList.remove("color")
     input.nextElementSibling.classList.remove("inputError")
     input.nextElementSibling.classList.add("inputBaseLine");
-
     input.nextElementSibling.classList.add("success");
 }
 

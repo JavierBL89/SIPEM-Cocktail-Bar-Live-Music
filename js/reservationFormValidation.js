@@ -15,8 +15,6 @@ window.addEventListener("DOMContentLoaded", () => {
     const prefix = document.getElementById("prefix");
     const phone = document.getElementById("phone");
     const validAge = document.getElementById("checkbox-label");
-    const stringInput = document.getElementsByTagName("input");
-    const numberInput = document.getElementsByTagName("input[type='number'");
     const startDate = document.getElementById("startDate");
     const startTime = document.getElementById("timeDropdown");
     let errorMessage = "";
@@ -27,9 +25,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
         validateForm();
         let countSuccessfulInputs = document.getElementsByClassName("success");
-        console.log(countSuccessfulInputs.length)
+        console.log(countSuccessfulInputs.length);
 
-        if (countSuccessfulInputs.length === 5) {
+        if (countSuccessfulInputs.length === 6) {
             alert("Thanks for booking a table with us! : )")
             reservationForm.submit();
         } else {
@@ -47,7 +45,6 @@ window.addEventListener("DOMContentLoaded", () => {
         const nameValue = fullName.value.trim();
         const emailValue = email.value.trim();
         const partySizeValue = partySize.value;
-        const prefixValue = prefix.value.trim();
         const phoneValue = phone.value.trim();
         const startDateValue = startDate.value;
         const startTimeValue = startTime.innerText;
@@ -120,7 +117,6 @@ window.addEventListener("DOMContentLoaded", () => {
         if (checkbox.checked) {
             validAge.classList.remove("redText");
         } else {
-            console.log(checkbox);
             validAge.classList.add("redText");
         }
 
@@ -141,7 +137,7 @@ window.addEventListener("DOMContentLoaded", () => {
      */
     function validEmailFormat(emailValue) {
         errorMessage = "Please enter a valid email caramba@whatever.domain'";
-        let emailFormatError = document.getElementById("booking-emailFormatError");
+        let wrongEmail = document.getElementById("email");
 
         // let isValid = false;
         const validRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -150,7 +146,6 @@ window.addEventListener("DOMContentLoaded", () => {
             setSuccesClass(email);
         } else {
             // clear input
-            let wrongEmail = document.getElementById("email");
             wrongEmail.value = "";
             wrongEmail.setAttribute("placeholder", "Enter a valid email e.g 'sipmen@sipem.com'");
             wrongEmail.classList.add("wrongEmail");
@@ -179,7 +174,6 @@ window.addEventListener("DOMContentLoaded", () => {
         input.classList.remove("color")
         input.nextElementSibling.classList.remove("inputError")
         input.nextElementSibling.classList.add("inputBaseLine");
-
         input.nextElementSibling.classList.add("success");
     }
 
