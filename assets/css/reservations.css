@@ -9,6 +9,8 @@ MIRAGE: |#17192B;
 ELBONY-CLAY: #242B37;
 SHUTLE-GRAY: #5C6779; */
 
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Lora:wght@500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&family=Sanchez:ital@0;1&display=swap');
+
 
 html {
     -ms-text-size-adjust: 100%;
@@ -1394,13 +1396,11 @@ input[type="checkbox"]:checked {
         margin: 0 auto;
     }
 
-
     .contact-wraper .contact-container {
         margin: 0 auto;
         width: 90%;
         padding: 80px 0;
     }
-
 
     .contact-wraper .contact-text-wraper {
         height: 450px;

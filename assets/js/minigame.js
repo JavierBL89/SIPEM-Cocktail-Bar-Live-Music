@@ -61,7 +61,7 @@ function startGame() {
             // Printing/Adding the following example to HTML element <img id="0-0" class="card" src="water.jpg">
             let card = document.createElement("img");
             card.id = r.toString() + "-" + c.toString();
-            card.src = cardImg + ".jpg";
+            card.src = cardImg + ".webp";
             card.classList.add("card");
             card.style.width = cardWidth + "px"; // Set the calculated width
             card.addEventListener("click", selectCard);
@@ -80,7 +80,7 @@ function hideCards() {
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns; c++) {
             let card = document.getElementById(r.toString() + "-" + c.toString());
-            card.src = "assets/images/logo.jpg";
+            card.src = "assets/images/logo.png";
         }
     }
 }
@@ -99,7 +99,7 @@ function selectCard() {
             let r = parseInt(coords[0]);
             let c = parseInt(coords[1]);
 
-            card1Selected.src = board[r][c] + ".jpg";
+            card1Selected.src = board[r][c] + ".webp";
         }
         else if (!card2Selected && this != card1Selected) {
             card2Selected = this;
@@ -109,7 +109,7 @@ function selectCard() {
             let r = parseInt(coords[0]);
             let c = parseInt(coords[1]);
 
-            card2Selected.src = board[r][c] + ".jpg";
+            card2Selected.src = board[r][c] + ".webp";
 
             // Update board & show cards (for 1000ms or 1s)
             setTimeout(update, 1000);
@@ -122,8 +122,8 @@ function selectCard() {
 function update() {
     // Ensure cards are same & if not, flip back & adjust error counter
     if (card1Selected.src != card2Selected.src) {
-        card1Selected.src = "assets/images/logo.jpg";
-        card2Selected.src = "assets/images/logo.jpg";
+        card1Selected.src = "assets/images/logo.png";
+        card2Selected.src = "assets/images/logo.png";
         errors += 1;
         document.getElementById("errors").innerText = errors;
     } else {
