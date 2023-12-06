@@ -84,12 +84,6 @@
             <div class="container text-center">
                 <div class="row align-items-center">
                     <div class="col-md-6">
-                        <div class="d-flex justify-content-center">
-                            <img src="assets/images/Cosmopolitan.jpg" class="rounded" class="img-fluid"
-                                alt="Cosmopolitan">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
                         <div class="cocktail-info-wrapper">
                             <h1>Cosmopolitan</h1>
                             <p>Step into a world of timeless elegance with our Cosmopolitan—a dazzling blend of premium
@@ -99,6 +93,20 @@
                                 harmonious balance of sweet and tart flavors. Served in a chilled martini glass and
                                 garnished with a flirty citrus twist, it's a chic and vibrant sip that embodies
                                 cosmopolitan charm in every glamorous drop.</p>
+                            <h8 id="cosmopolitan-notice" class="fw-medium">Click the image to see the ingredients!</h8>
+                        </div>
+                        <div id="cosmopolitan-ingredients" style="display: none;">
+                            <h4>Ingredients</h4>
+                            <p>- 1.5 oz citrus vodka</p>
+                            <p>- 1 oz Cointreau</p>
+                            <p>- .5 oz lime juice</p>
+                            <p>- .25 oz cranberry juice</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-center">
+                            <img src="assets/images/cosmopolitan.jpg" class="rounded" class="rounded" class="img-fluid"
+                                alt="Cosmopolitan" onclick="showIngredients('cosmopolitan')">
                         </div>
                     </div>
                 </div>
@@ -117,12 +125,21 @@
                                 velvety smoothness that dances across your palate, awakening the senses with every sip.
                                 Served chilled in a martini glass, it's the sophisticated jolt you crave, a union of
                                 caffeine and cocktail craftsmanship that's simply irresistible.</p>
+                            <h8 id="EspressoMartini-notice" class="fw-medium">Click the image to see the ingredients!
+                            </h8>
+                        </div>
+                        <div id="EspressoMartini-ingredients" style="display: none;">
+                            <h4>Ingredients</h4>
+                            <p>- 2 oz vodka</p>
+                            <p>- 1.5 oz Kahlúa</p>
+                            <p>- 0.5 oz sugar syrup</p>
+                            <p>- 1 strong Espresso</p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="d-flex justify-content-center">
                             <img src="assets/images/EspressoMartini.jpg" class="rounded" class="img-fluid"
-                                alt="Espresso Martini">
+                                alt="Espresso Martini" onclick="showIngredients('EspressoMartini')">
                         </div>
                     </div>
                 </div>
@@ -134,7 +151,8 @@
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <div class="d-flex justify-content-center">
-                            <img src="assets/images/Margarita.jpg" class="rounded" class="img-fluid" alt="Margarita">
+                            <img src="assets/images/Margarita.jpg" class="rounded" class="img-fluid" alt="Margarita"
+                                onclick="showIngredients('Margarita')">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -147,6 +165,14 @@
                                 citrusy brightness and the smooth, earthy essence of tequila. Served over ice in a
                                 salt-rimmed glass, each sip is a fiesta for the senses, delivering a zesty kick that
                                 transports you to a breezy, carefree paradise.</p>
+                            <h8 id="Margarita-notice" class="fw-medium">Click the image to see the ingredients!</h8>
+                        </div>
+                        <div id="Margarita-ingredients" style="display: none;">
+                            <h4>Ingredients</h4>
+                            <p>- 2 oz silver tequila</p>
+                            <p>- 1 oz Cointreau</p>
+                            <p>- 1 oz lime juice</p>
+                            <p>- Salt for the rim</p>
                         </div>
                     </div>
                 </div>
@@ -166,12 +192,20 @@
                                 ice with a delicate cherry garnish, each sip unveils layers of complexity, inviting you
                                 to savor the perfect fusion of sweet, sour, and the unmistakable depth of fine whiskey.
                             </p>
+                            <h8 id="WhiskeySour-notice" class="fw-medium">Click the image to see the ingredients!</h8>
+                        </div>
+                        <div id="WhiskeySour-ingredients" style="display: none;">
+                            <h4>Ingredients</h4>
+                            <p>- 2 oz whiskey</p>
+                            <p>- 1 oz lemon juice</p>
+                            <p>- 1 tsp sugar</p>
+                            <p>- 1 egg white</p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="d-flex justify-content-center">
                             <img src="assets/images/WhiskeySour.jpg" class="rounded" class="img-fluid"
-                                alt="Whiskey Sour">
+                                alt="Whiskey Sour" onclick="showIngredients('WhiskeySour')">
                         </div>
                     </div>
                 </div>
@@ -183,7 +217,8 @@
                 <div class="row align-items-center">
                     <div class="col-md-6">
                         <div class="d-flex justify-content-center">
-                            <img src="assets/images/Martini.jpg" class="rounded" class="img-fluid" alt="Martini">
+                            <img src="assets/images/Martini.jpg" class="rounded" class="img-fluid" alt="Martini"
+                                onclick="showIngredients('Martini')">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -196,6 +231,13 @@
                                 complemented by the subtle dance of vermouth. With an optional twist of citrus or an
                                 elegant olive garnish, this classic cocktail is an ode to elegance, inviting you to
                                 savor the pure essence of indulgence in a glass.</p>
+                            <h8 id="Martini-notice" class="fw-medium">Click the image to see the ingredients!</h8>
+                        </div>
+                        <div id="Martini-ingredients" style="display: none;">
+                            <h4>Ingredients</h4>
+                            <p>- 3 oz gin or vodka</p>
+                            <p>- .5 oz dry vermouth</p>
+                            <p>- Lemon peel or olive</p>
                         </div>
                     </div>
                 </div>
@@ -215,11 +257,19 @@
                                 bourbon with the invigorating essence of mint. Served in a frosty silver cup, it's a
                                 timeless concoction that whispers of lazy afternoons and southern hospitality, offering
                                 a delightful fusion of tradition and refreshment in every sip.</p>
+                            <h8 id="MintJulep-notice" class="fw-medium">Click the image to see the ingredients!</h8>
+                        </div>
+                        <div id="MintJulep-ingredients" style="display: none;">
+                            <h4>Ingredients</h4>
+                            <p>- 2 oz bourbon/p>
+                            <p>- 8-10 mint leaves</p>
+                            <p>- .25 oz simple syrup</p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="d-flex justify-content-center">
-                            <img src="assets/images/MintJulep.jpg" class="rounded" class="img-fluid" alt="Mint Julep">
+                            <img src="assets/images/MintJulep.jpg" class="rounded" class="img-fluid" alt="Mint Julep"
+                                onclick="showIngredients('MintJulep')">
                         </div>
                     </div>
                 </div>
@@ -388,7 +438,6 @@
     <script type="text/javascript" src="assets/js/burgerMenu.js" defer></script>
 
     <script>
-
         const currentYear = new Date().getFullYear();
         console.log(currentYear);
         document.getElementById("current-year").textContent = currentYear;

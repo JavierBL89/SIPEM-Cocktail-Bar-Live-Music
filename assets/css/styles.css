@@ -1,10 +1,11 @@
-/* CSS for Cocktail Sections */
 #signature-header {
     height: 200px;
 }
 
+/* CSS for Cocktail Sections */
+
 #CocktailBackground {
-    background: linear-gradient(to bottom, rgb(127, 203, 165), #5a7590);
+    background: linear-gradient(to bottom, rgb(176, 128, 164), #5a7590);
 }
 
 /* Style for Cocktail Overview */
@@ -12,11 +13,20 @@
     padding-top: 50px;
 }
 
+.cocktail-overview h1,
+.cocktail-section h1 {
+    font-family: 'Courgette', cursive;
+}
+
 /* Style for cocktail section */
 .cocktail-section {
     padding: 50px 0;
 }
 
+.cocktail-overview p,
+.cocktail-section P {
+    font-family: 'Kalam', cursive;
+}
 
 /* Style for cocktail image*/
 .cocktail-section img {
@@ -28,16 +38,14 @@
     object-fit: cover;
 }
 
-/* Image flipping
-.cocktail-section img:active {
-    transform: scale(0.97);
-    transition: transform .2s;
+/* Style for cocktail images when clicked */
+.clickedCocktail {
+    transition: transform 0.2s ease-in-out;
 }
 
-.cocktail-section img:active {
-    transform: rotateY(180deg);
+.transformed-size {
+    transform: scale(1.05);
 }
-*/
 
 /* Style for cocktail info */
 .cocktail-info {
@@ -75,113 +83,20 @@
     padding: 5px;
 }
 
+.card {
+    margin: 5px;
+    border: none;
+}
+
 #board .card {
     margin: 5px;
     border: none;
     background-color: #111111;
-    zoom: 1.02;
+    zoom: 1.1;
+
 }
-
-
 
 .card:active {
     transform: scale(0.97);
     transition: transform .2s;
-}
-
-/************** FOOTER WRAPER ***********/
-#footer {
-    margin-top: auto;
-}
-
-.footer-wraper {
-    margin-top: 100px;
-    min-height: 260px;
-    background-color: #333333;
-}
-
-.footer-wraper .container-fluid {
-    min-width: 1000px;
-    max-width: 1150px;
-    padding: 40px 100px;
-    justify-content: space-evenly;
-    text-align: start;
-}
-
-#logo-footer {
-    font-size: 1.7rem;
-    text-align: center;
-    margin: 35px auto auto;
-}
-
-.footer-wraper #icon-location {
-    height: 15px;
-}
-
-.footer-wraper .social-wraper {
-    margin-top: 30px;
-    padding-left: 60px;
-}
-
-.footer-wraper #facebook-icon,
-.footer-wraper #insta-icon,
-.footer-wraper #x-icon {
-    height: 22px;
-    width: 22px;
-    margin-left: 8px;
-}
-
-.footer-wraper #insta-icon {
-    height: 35px;
-    width: 35px;
-}
-
-.footer-wraper p {
-    margin: 5px;
-    font-size: 0.7rem;
-    color: #FFFFF0;
-}
-
-.footer-wraper .container-fluid .col {
-    text-align: center;
-}
-
-.footer-wraper a {
-    color: #FFFFF0;
-    text-decoration: none;
-}
-
-#sipem-email {
-    text-decoration: underline;
-}
-
-.footer-copyright {
-    text-align: center;
-    padding-top: 40px;
-}
-
-.footer-copyright p {
-    text-align: center;
-    color: #FFFFF0;
-    margin-bottom: 0;
-    margin: 0;
-    font-size: 0.7rem;
-}
-
-
-.authors-container {
-    background-color: #B76E79;
-    margin: 0 auto;
-    padding: 10px 0;
-}
-
-.authors-container>p,
-.names-wraper>p {
-    font-weight: bold;
-    font-size: 16px;
-    color: #333333;
-}
-
-.names-wraper p {
-    color: #FFF5E1;
 }

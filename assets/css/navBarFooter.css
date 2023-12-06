@@ -212,7 +212,7 @@ header nav .navbar-toggler-icon {
     width: 100%;
     height: inherit;
     max-height: 950px;
-    background-image: url("../images/scenario.jpg");
+    background-image: url("../images/scenario.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -224,7 +224,7 @@ header #about-bg-img {
     width: 100%;
     height: inherit;
     max-height: 950px;
-    background-image: url("../images/tables.jpg");
+    background-image: url("../images/tables.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -235,7 +235,7 @@ header #about-bg-img {
     width: 100%;
     height: inherit;
     /* max-height: 950px; */
-    background-image: url("../images/bar.jpg");
+    background-image: url("../images/bar.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
