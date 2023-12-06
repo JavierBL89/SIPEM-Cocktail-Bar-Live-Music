@@ -1,3 +1,12 @@
+/*** File listents to events on cocktails images, 
+ * Display the ingredients of the cocktail selected
+ * 
+ * @author Bence Pillips
+ */
+
+/*jshint esversion: 6 */
+
+
 function showIngredients(cocktail) {
 
     const notice = document.getElementById(cocktail + '-notice');

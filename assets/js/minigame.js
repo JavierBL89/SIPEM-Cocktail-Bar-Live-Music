@@ -1,3 +1,10 @@
+/*** File holds the random minigame start and logic
+ * 
+ * @author Bence Pillips
+ */
+
+/*jshint esversion: 6 */
+
 // Error counter
 var errors = 0;
 
@@ -9,7 +16,7 @@ var cardArray = [
     "assets/images/Martini",
     "assets/images/MintJulep",
     "assets/images/WhiskeySour"
-]
+];
 
 var cardSet;
 var board = [];
@@ -26,7 +33,7 @@ var matchedPairs = 0;
 window.onload = function () {
     shuffleCards();
     startGame();
-}
+};
 
 // Function to shuffle the cards
 function shuffleCards() {

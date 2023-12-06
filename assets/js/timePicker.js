@@ -1,7 +1,11 @@
 /*** File to handle user events on timepicker feature
+ * The user selects a start time and the input gets the value selected
  * 
  * @author Javier Bastande 
  */
+
+/*jshint esversion: 6 */
+
 
 const timeSlot = document.getElementsByClassName("dropdown-item");
 let timerPicker;

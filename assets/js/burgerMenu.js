@@ -1,6 +1,13 @@
-/***
+
+/*** File listents to events on navbar burger icon, 
+ * and close icon.
+ * Display and close the modal navbar menu
+ * 
  * @author Javier Bastande
  */
+
+/*jshint esversion: 6 */
+
 
 const closeIcon = document.getElementById("close-icon");
 const burger = document.getElementById("burger");
@@ -20,9 +27,7 @@ burger.addEventListener("click", () => {
     rectangle.classList.add("popInRectangle");
     firstSection.classList.add("contentFadeOut");
     navLogo.classList.add("fixedLogo");
-
-
-})
+});
 
 /***
  * Listen to close icon on click, and hide modal menu
@@ -33,5 +38,4 @@ closeIcon.addEventListener("click", () => {
     modalMenu.classList.remove("showMenu");
     firstSection.classList.add("contentFadeIn");
     modalMenu.classList.add("closeMenu");
-
-})
+});

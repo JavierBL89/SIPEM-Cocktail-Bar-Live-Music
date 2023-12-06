@@ -233,7 +233,8 @@ header nav .navbar-toggler-icon {
 }
 
 header #reservations-bg-image,
-header #about-bg-img {
+header #about-bg-img,
+header #home-bg-img {
     position: absolute;
     width: 100%;
     height: inherit;
@@ -410,7 +411,7 @@ h6 {
 
 .pin-separator {
     display: flex;
-    direction: row;
+    flex-direction: row;
     width: 400px;
     align-items: center;
     margin-bottom: 40px;
@@ -582,8 +583,7 @@ h6 {
 
 
 /*********** RESERVATIONS PAGE SHARED PROPERTIES*/
-#reservations-main-wraper h4,
-#about-main-wraper h4 {
+#reservations-main-wraper h4 {
     font-size: 4rem;
 }
 
@@ -958,7 +958,7 @@ input[type="checkbox"]:checked {
 
     .pin-separator {
         display: flex;
-        direction: row;
+        flex-direction: row;
         width: 400px;
         align-items: center;
         margin-bottom: 40px;
@@ -1738,7 +1738,7 @@ input[type="checkbox"]:checked {
 
     .pin-separator {
         display: flex;
-        direction: row;
+        flex-direction: row;
         width: 400px;
         align-items: center;
         margin-bottom: 40px;
@@ -2575,7 +2575,7 @@ input[type="checkbox"]:checked {
 
     .pin-separator {
         display: flex;
-        direction: row;
+        flex-direction: row;
         width: 400px;
         align-items: center;
         margin-bottom: 40px;
