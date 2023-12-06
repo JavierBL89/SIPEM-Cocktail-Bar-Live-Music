@@ -12,7 +12,7 @@
 
   <!--------------------- STYLESHEET LINK--------------------->
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="assets/css/navBarFooter.css">
+  <link rel="stylesheet" href="assets/css/style.css.css">
 
 
   <!--------------------- FONTS LINK--------------------->
@@ -103,7 +103,9 @@
       <h2>Events Letters</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit.</p>
       <form>
-        <input type="email" placeholder="Email">
+        <input type="email" placeholder="Email" id="subscription-email" required>
+        <div class="inputBaseLine" style="visibility: hidden;"></div>
+
         <button type="submit">SUBMIT</button>
       </form>
     </section>
@@ -249,6 +251,7 @@
 
   <!----- SCRIPTS-->
   <script type="text/javascript" src="assets/js/burgerMenu.js" defer></script>
+  <script type="text/javascript" src="assets/js/emailValidation/emailValidation.js" defer></script>
 
 </body>
 
