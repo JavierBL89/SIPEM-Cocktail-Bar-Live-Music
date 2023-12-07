@@ -780,9 +780,16 @@ input[type="checkbox"]:checked {
 
 .section2 img,
 .section3 img {
-    width: 70%;
     height: auto;
     box-shadow: 0 10px 8px #0000001a;
+}
+
+.section2 img {
+    width: 70%;
+}
+
+.section5 img {
+    width: 100%;
 }
 
 /* Estilizando o h3 */
@@ -923,10 +930,8 @@ input[type="checkbox"]:checked {
 }
 
 /****
-* Home page stylings
+* Upcoming page stylings
 *
-* NOTE: No more styling for different sceeens were provided
-* for homepage
 * @author Heloise Lui 
 **/
 .upcoming-events {
@@ -939,16 +944,23 @@ input[type="checkbox"]:checked {
     font-size: 4rem;
     color: #242B37;
     margin: 70px 0;
-
 }
 
 .events {
-    display: flex;
+    margin: 0 auto;
 
 }
 
 .event {
     padding: 20px;
+}
+
+section .container .service {
+    margin: 0 auto;
+}
+
+section .container .service .col {
+    margin: 0 auto;
 }
 
 .upcoming-events .event {
@@ -1082,8 +1094,10 @@ input[type="checkbox"]:checked {
 }
 
 
-/* CSS for Cocktail Sections */
 
+
+
+/* CSS for Cocktail Sections */
 
 
 /* Style for Cocktail Overview */
@@ -2862,14 +2876,15 @@ input[type="checkbox"]:checked {
         font-size: 1rem;
     }
 
-    .events {
-        flex-direction: column;
-        align-items: center;
+    .events .row {
+        margin: 0 auto;
+
     }
 
     .event {
         width: 100%;
         max-width: 500px;
+        margin: 0 auto;
     }
 
     .reservation-footer,
