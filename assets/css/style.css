@@ -10,8 +10,8 @@ h6 {
     font-family: "League Spartan";
 }
 
-p,
-a {
+#CocktailBackground p,
+p a {
     font-family: "League Spartan";
 
 }
@@ -661,7 +661,6 @@ header nav .nav-link,
 /*** buttons and links */
 #reservations-main-wraper button[type="submit"] {
     font-size: 1.25rem;
-    ;
     font-weight: 500;
     letter-spacing: 1.5px;
     background-color: #111111;
@@ -717,6 +716,7 @@ input[type="checkbox"]:checked {
     border: none;
     color: #111111;
     opacity: 0.8;
+    background-color: #ffffff;
 }
 
 #reservations-main-wraper .form-input-wraper {
@@ -749,6 +749,436 @@ input[type="checkbox"]:checked {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/****
+* Home page stylings
+*
+* NOTE: No more styling for different sceeens were provided
+* for homepage
+* @author Heloise Lui 
+**/
+
+/************** MAIN **************/
+.header-content {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    padding: 50px 0 60px 240px;
+    opacity: 1;
+    position: relative;
+    background-color: transparent;
+    word-break: break-all;
+}
+
+.section2,
+.section3 {
+    background-color: #ffffff;
+    font-family: 'League Spartan', sans-serif;
+    padding: 40px;
+}
+
+.section2 img,
+.section3 img {
+    width: 70%;
+    height: auto;
+    box-shadow: 0 10px 8px #0000001a;
+}
+
+/* Estilizando o h3 */
+.section2 h3,
+.section3 h3 {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* Estilizando o p */
+.section2 p,
+.section3 p {
+    font-size: 1.25rem;
+}
+
+.section5 p {
+    font-family: 'League Spartan';
+    font-size: 1.3rem;
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+.header-content h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    font-family: 'League Spartan';
+    letter-spacing: -1px;
+}
+
+.header-content p {
+    font-size: 1.3rem;
+    font-family: 'League Spartan';
+}
+
+.container-image {
+    text-align: center;
+    background-color: #111111;
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-family: 'Sanchez', serif;
+    font-weight: 400;
+    padding: 230px;
+
+}
+
+.text-signature {
+    font-size: 1.4rem;
+    text-align: right;
+    margin-right: 35px;
+}
+
+.container-image .quotation-marks-left,
+.quotation-marks-right {
+    margin-right: 10px;
+}
+
+.section5 {
+    padding: 80px;
+}
+
+.buttons button {
+    background-color: transparent;
+    color: #333;
+    font-size: 1.125rem;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 245px;
+    height: 64px;
+}
+
+.row h3 {
+    text-align: center;
+    color: #242B37;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 40px;
+}
+
+.reservation-footer {
+    background-image: url('./assets/images/sipem-space.png');
+    background-size: cover;
+    background-position: center;
+    padding: 70px 80px;
+    position: relative;
+    color: #fff;
+}
+
+.reservation-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.reservation-footer .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.reservation-heading {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.btn-homepage {
+    font-family: 'League Spartan', sans-serif;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 15px 70px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 2.5px;
+}
+
+.btn-homepage:hover {
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+}
+
+/****
+* Home page stylings
+*
+* NOTE: No more styling for different sceeens were provided
+* for homepage
+* @author Heloise Lui 
+**/
+.upcoming-events {
+    background-color: #ffffff;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+}
+
+.upcoming-events h1 {
+    font-size: 4rem;
+    color: #242B37;
+    margin: 70px 0;
+
+}
+
+.events {
+    display: flex;
+
+}
+
+.event {
+    padding: 20px;
+}
+
+.upcoming-events .event {
+    margin-bottom: 40px;
+}
+
+.event img {
+    width: 350px;
+    height: 300px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 50px -12px #333;
+}
+
+.upcoming-events .event h2 {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #242B37;
+}
+
+.upcoming-events .event p {
+    font-size: 1.3rem;
+    color: #242B37;
+    margin-bottom: 40px;
+
+}
+
+.upcoming-events .event .event-time {
+    color: #111111;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+/* Newsletter Section */
+.newsletter {
+    color: #242B37;
+    padding: 60px 0;
+    font-family: 'League Spartan', sans-serif;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 2.5rem;
+    font-family: 'League Spartan';
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.newsletter p {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+}
+
+.newsletter input[type="email"] {
+    padding: 12px;
+    margin-right: 3px;
+    border: none;
+    border-radius: 0;
+    background-color: rgba(217, 217, 217, 0.36);
+    width: 344px;
+    height: 40px;
+}
+
+.newsletter button {
+    background-color: #111111;
+    font-size: 1rem;
+    color: #FFFFFF;
+    text-align: center;
+    width: 108px;
+    height: 40px;
+    border: none;
+    letter-spacing: 2.5px;
+}
+
+.newsletter button:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #111111;
+    color: #111111;
+}
+
+.reservation-footer {
+    background-image: url("../images/call-action-img.webp");
+    background-size: cover;
+    background-position: center;
+    padding: 70px 80px;
+    position: relative;
+    color: #fff;
+}
+
+.reservation-footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.reservation-footer .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.reservation-heading {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.btn-footer {
+    font-family: 'League Spartan', sans-serif;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 15px 35px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-footer:hover {
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+}
+
+
+/* CSS for Cocktail Sections */
+
+
+
+/* Style for Cocktail Overview */
+.cocktail-overview {
+    padding-top: 50px;
+}
+
+.cocktail-overview h1,
+.cocktail-section h1 {
+    font-family: 'Spartan League', sans-serif;
+}
+
+/* Style for cocktail section */
+.cocktail-section {
+    padding: 50px 0;
+}
+
+.cocktail-overview p,
+.cocktail-section P {
+    font-family: 'Kalam', cursive;
+}
+
+/* Style for cocktail image*/
+.cocktail-section img {
+    max-width: 100%;
+    max-height: 750px;
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Style for cocktail images when clicked */
+.clickedCocktail {
+    transition: transform 0.2s ease-in-out;
+}
+
+.transformed-size {
+    transform: scale(1.05);
+}
+
+/* Style for cocktail info */
+.cocktail-info {
+    padding: 20px;
+}
+
+.cocktail-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cocktail-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* CSS for Minigame */
+#minigame-section {
+    padding: 50px;
+}
+
+#minigame {
+    background-size: cover;
+    text-align: center;
+}
+
+#board {
+    max-width: 45%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(112, 47, 47);
+    border: 10px solid rgb(163, 161, 161);
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.card {
+    margin: 5px;
+    border: none;
+}
+
+#board .card {
+    margin: 5px;
+    border: none;
+    background-color: #111111;
+    zoom: 1.1;
+
+}
+
+.card:active {
+    transform: scale(0.97);
+    transition: transform .2s;
+}
+
 
 /*************************** Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -783,6 +1213,13 @@ input[type="checkbox"]:checked {
 
     header .rectangle {
         min-width: 37%;
+    }
+
+    #about-header,
+    #signature-header,
+    #upcoming-header {
+        height: 200px;
+        position: relative;
     }
 
     /**************** FOOTER SECTION ****/
@@ -863,11 +1300,6 @@ input[type="checkbox"]:checked {
 **/
 
     #about-main-wraper {
-        position: relative;
-    }
-
-    #about-header {
-        height: 200px;
         position: relative;
     }
 
@@ -992,7 +1424,6 @@ input[type="checkbox"]:checked {
     /********* alex section**/
     #alex #alex-decorator {
         position: absolute;
-        /* right: 30px; */
         right: 0;
         padding-top: 200px;
     }
@@ -1022,7 +1453,6 @@ input[type="checkbox"]:checked {
     #alex .alex-wraper {
         color: #111111;
         padding-bottom: 60px;
-
     }
 
     #alex .alex-desc-wraper {
@@ -1094,7 +1524,6 @@ input[type="checkbox"]:checked {
     /*** BOOKING FORM*/
     #reservations form .form-input-wraper p {
         font-size: 1.25rem;
-        ;
         padding-top: 10px;
     }
 
@@ -1142,7 +1571,6 @@ input[type="checkbox"]:checked {
     #contact-number-wraper {
         padding: 0;
     }
-
 
     #reservations .booking-form-wraper .contact-number-wraper {
         display: flex;
@@ -1250,7 +1678,6 @@ input[type="checkbox"]:checked {
         margin: 0;
         padding: 5px;
         font-size: 1.25rem;
-        ;
     }
 
     #reservations form .form-input-wraper .time-slot-wraper p:hover {
@@ -1301,16 +1728,20 @@ input[type="checkbox"]:checked {
 * Took the code lines from the below link
 /* https://stackoverflow.com/questions/2338102/override-browser-form-filling-and-input-highlighting-with-html-css 
 */
-    form .form-input-wraper input:-webkit-autofill {
+    input:-webkit-autofill,
+    #contact input:-webkit-autofill {
         -webkit-box-shadow: 0 0 0 50px #333333 inset;
         /* Change the color to your own background color */
         -webkit-text-fill-color: #FFFFF0;
+        -webkit-text-fill-backgorund-color: #FFFFF0;
         -webkit-text-fill-font-size: 0.813rem;
     }
 
-    form .form-input-wraper input:-webkit-autofill:focus {
+    #reservations input:-webkit-autofill:focus,
+    #contact input:-webkit-autofill:focus {
         -webkit-box-shadow: 0 0 0 50px #ffffff inset;
         /*your box-shadow*/
+        -webkit-text-fill-backgorund-color: #FFFFF0;
         -webkit-text-fill-color: #111111;
         -webkit-text-fill-font-size: 1.125rem;
     }
@@ -1391,7 +1822,6 @@ input[type="checkbox"]:checked {
     #contact .contact-form-wraper textarea {
         margin: 50px 5px 0 5px;
         font-size: 1.25rem;
-        ;
         text-align: left;
         padding: 15px;
         width: 99%;
@@ -1415,7 +1845,6 @@ input[type="checkbox"]:checked {
 
     #reservations-review #review-wraper {
         width: 100%;
-
     }
 
     #reservations-review .review-container {
@@ -1453,6 +1882,166 @@ input[type="checkbox"]:checked {
         padding-left: 50px;
         padding-right: 50px;
         margin-bottom: 0;
+    }
+
+
+    /****
+* Upcoming page stylings for desktop screens
+*
+* @author Heloise Lui 
+**/
+
+    .upcoming-events {
+        background-color: #ffffff;
+        font-family: 'League Spartan', sans-serif;
+        text-align: center;
+    }
+
+    .upcoming-events h1 {
+        font-size: 4rem;
+        color: #242B37;
+        margin: 70px 0;
+
+    }
+
+    .events {
+        display: flex;
+
+    }
+
+    .event {
+        padding: 20px;
+    }
+
+    .upcoming-events .event {
+        margin-bottom: 40px;
+    }
+
+    .event img {
+        width: 350px;
+        height: 300px;
+        margin-bottom: 40px;
+        box-shadow: 0 10px 50px -12px #333;
+    }
+
+    .upcoming-events .event h2 {
+        font-weight: bold;
+        font-size: 2rem;
+        color: #242B37;
+    }
+
+    .upcoming-events .event p {
+        font-size: 1.3rem;
+        color: #242B37;
+        margin-bottom: 40px;
+
+    }
+
+    .upcoming-events .event .event-time {
+        color: #111111;
+        font-size: 1rem;
+        letter-spacing: 2px;
+    }
+
+    /* Newsletter Section */
+    .newsletter {
+        color: #242B37;
+        padding: 60px 0;
+        font-family: 'League Spartan', sans-serif;
+        text-align: center;
+    }
+
+    .newsletter h2 {
+        font-size: 2.5rem;
+        font-family: 'League Spartan';
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    .newsletter p {
+        font-size: 1.25rem;
+        margin-bottom: 40px;
+    }
+
+    .newsletter input[type="email"] {
+        padding: 12px;
+        margin-right: 3px;
+        border: none;
+        border-radius: 0;
+        background-color: rgba(217, 217, 217, 0.36);
+        width: 344px;
+        height: 40px;
+    }
+
+    .newsletter button {
+        background-color: #111111;
+        font-size: 1rem;
+        color: #FFFFFF;
+        text-align: center;
+        width: 108px;
+        height: 40px;
+        border: none;
+        letter-spacing: 2.5px;
+    }
+
+    .newsletter button:hover {
+        background-color: #FFFFFF;
+        border: 1px solid #111111;
+        color: #111111;
+    }
+
+
+    .reservation-footer {
+        background-image: url('../images/call-action-img.webp');
+        background-size: cover;
+        background-position: center;
+        padding: 70px 80px;
+        position: relative;
+        color: #fff;
+    }
+
+    .reservation-footer::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+
+    .reservation-footer .container {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .reservation-heading {
+        font-family: 'League Spartan', sans-serif;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .btn-footer {
+        font-family: 'League Spartan', sans-serif;
+        background-color: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+        padding: 15px 35px;
+        font-size: 1rem;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .btn-footer:hover {
+        background-color: #fff;
+        color: #333;
+        text-decoration: none;
     }
 
 }
@@ -1503,6 +2092,13 @@ input[type="checkbox"]:checked {
 
     header nav .show ul:last-child {
         padding-bottom: 18px;
+    }
+
+    #about-header,
+    #signature-header,
+    #upcoming-header {
+        height: 150px;
+        position: relative;
     }
 
     /********** MODAL MENU */
@@ -1653,9 +2249,6 @@ input[type="checkbox"]:checked {
 * About page stylings for tablet screen
 * @author Javier Bastande 
 **/
-    #about-header {
-        height: 150px;
-    }
 
     #john .name-heading,
     #alex .name-heading {
@@ -1909,13 +2502,11 @@ input[type="checkbox"]:checked {
         font-size: 2.188rem;
     }
 
-
     .reservations-wraper .reservations-container {
         width: 80%;
         max-width: 600px;
         margin: 0 auto;
     }
-
 
     .reservations-wraper .reservation-text-wraper {
         height: 300px;
@@ -2003,7 +2594,6 @@ input[type="checkbox"]:checked {
         margin: 30px auto;
         height: 65px;
         font-size: 1.25rem;
-        ;
         font-weight: 500;
         letter-spacing: 1.5px;
         width: 93%;
@@ -2119,19 +2709,23 @@ input[type="checkbox"]:checked {
 * Took the code lines from the below link
 /* https://stackoverflow.com/questions/2338102/override-browser-form-filling-and-input-highlighting-with-html-css 
 */
-    form .form-input-wraper input:-webkit-autofill {
+    #reservations input:-webkit-autofill,
+    #contact input:-webkit-autofill {
         -webkit-box-shadow: 0 0 0 50px #333333 inset;
         /* Change the color to your own background color */
+        -webkit-text-fill-background-color: #ffffff;
         -webkit-text-fill-color: #FFFFF0;
         -webkit-text-fill-font-size: 0.813rem;
     }
 
-    form .form-input-wraper input:-webkit-autofill:focus {
+    #reservations input:-webkit-autofill:focus,
+    #contact input:-webkit-autofill:focus {
         -webkit-box-shadow: 0 0 0 50px #ffffff inset;
         /*your box-shadow*/
         -webkit-text-fill-color: #111111;
         -webkit-text-fill-font-size: 1.125rem;
     }
+
 
     /******* RESERVATION SECTIONS SEPARATOR  */
     #reservations-section-separator {
@@ -2215,7 +2809,6 @@ input[type="checkbox"]:checked {
 
     #reservations-review .review-wraper {
         min-width: 100%;
-
     }
 
     #reservations-review .review-container {
@@ -2247,6 +2840,46 @@ input[type="checkbox"]:checked {
         font-size: 1.25rem;
         letter-spacing: 0.5px;
         line-height: 40px;
+    }
+
+    /****
+* Upcoming page stylings for tablet screen
+*
+* @author Heloise Lui 
+**/
+    .upcoming-events h1,
+    .newsletter h2,
+    .reservation-footer h2 {
+        font-size: 2.5rem;
+    }
+
+    .event h2 {
+        font-size: 1.8rem;
+    }
+
+    .event p,
+    .event .event-time {
+        font-size: 1rem;
+    }
+
+    .events {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .reservation-footer,
+    .newsletter {
+        padding: 40px 20px;
+    }
+
+    .btn-footer {
+        width: auto;
+        padding: 10px 20px;
     }
 }
 
@@ -2294,6 +2927,13 @@ input[type="checkbox"]:checked {
 
     header .rectangle {
         min-width: 33%;
+    }
+
+    #about-header,
+    #signature-header,
+    #upcoming-header {
+        height: 150px;
+        position: relative;
     }
 
     /***** modal menu */
@@ -2347,7 +2987,6 @@ input[type="checkbox"]:checked {
     #navbar-modal .modal-social-wraper #modal-facebook-icon {
         height: 24px;
         width: 24px;
-
     }
 
     #navbar-modal .modal-social-wraper #modal-insta-icon {
@@ -2361,7 +3000,6 @@ input[type="checkbox"]:checked {
     }
 
     /************** FOOTER SECTION ***********/
-
     .footer-wraper {
         min-height: 460px;
         width: 100%;
@@ -2429,7 +3067,6 @@ input[type="checkbox"]:checked {
         height: 35px;
         width: 35px;
         margin-left: 8px;
-
     }
 
     .footer-wraper .container-fluid .col {
@@ -3034,17 +3671,21 @@ input[type="checkbox"]:checked {
 * Took the code lines from the below link
 /* https://stackoverflow.com/questions/2338102/override-browser-form-filling-and-input-highlighting-with-html-css 
 */
-    form .form-input-wraper input:-webkit-autofill {
+    #reservations input:-webkit-autofill,
+    #contact input:-webkit-autofill {
         -webkit-box-shadow: 0 0 0 50px #333333 inset;
         /* Change the color to your own background color */
+        background-color: #ffffff;
         -webkit-text-fill-color: #FFFFF0;
         -webkit-text-fill-font-size: 0.813rem;
     }
 
-    form .form-input-wraper input:-webkit-autofill:focus {
+    #reservations input:-webkit-autofill:focus,
+    #contact input:-webkit-autofill:focus {
         -webkit-box-shadow: 0 0 0 50px #ffffff inset;
         /*your box-shadow*/
         -webkit-text-fill-color: #111111;
+        background-color: #ffffff;
         -webkit-text-fill-font-size: 1.125rem;
     }
 
@@ -3190,107 +3831,61 @@ input[type="checkbox"]:checked {
     #left-quote {
         bottom: 10px;
     }
-}
 
-#signature-header {
-    height: 200px;
-}
+    /****
+* Upcoming page stylings for mobile screen
+*
+* @author Heloise Lui 
+**/
+    .upcoming-events h1,
+    .newsletter h2,
+    .reservation-footer h2 {
+        font-size: 2rem;
+    }
 
-/* CSS for Cocktail Sections */
+    .event h2 {
+        font-size: 1.5rem;
+    }
 
-#CocktailBackground {
-    background: linear-gradient(to bottom, rgb(176, 128, 164), #5a7590);
-}
+    .event p,
+    .event .event-time,
+    .btn-footer {
+        font-size: 0.9rem;
+    }
 
-/* Style for Cocktail Overview */
-.cocktail-overview {
-    padding-top: 50px;
-}
+    .btn-footer {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+    }
 
-.cocktail-overview h1,
-.cocktail-section h1 {
-    font-family: 'Spartan League', sans-serif;
-}
+    .event img {
+        margin: auto;
+        /* Center images */
+    }
 
-/* Style for cocktail section */
-.cocktail-section {
-    padding: 50px 0;
-}
+    .btn-footer {
+        width: 100%;
+        /* Full width button */
+    }
 
-.cocktail-overview p,
-.cocktail-section P {
-    font-family: 'Kalam', cursive;
-}
+    /* Adjust the heading sizes */
+    .section2 h3,
+    .section3 h3,
+    .reservation-heading {
+        font-size: 1.5rem;
+        /* Even smaller font size for headings */
+    }
 
-/* Style for cocktail image*/
-.cocktail-section img {
-    max-width: 100%;
-    max-height: 750px;
-    width: auto;
-    height: auto;
-    display: block;
-    object-fit: cover;
-}
+    /* Adjust the paragraph sizes */
+    .section2 p,
+    .section3 p {
+        font-size: .9rem;
+        /* Even smaller font size for paragraphs */
+    }
 
-/* Style for cocktail images when clicked */
-.clickedCocktail {
-    transition: transform 0.2s ease-in-out;
-}
-
-.transformed-size {
-    transform: scale(1.05);
-}
-
-/* Style for cocktail info */
-.cocktail-info {
-    padding: 20px;
-}
-
-.cocktail-info h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.cocktail-info p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-/* CSS for Minigame */
-#minigame-section {
-    padding: 50px;
-}
-
-#minigame {
-    background-size: cover;
-    text-align: center;
-}
-
-#board {
-    max-width: 45%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: rgb(112, 47, 47);
-    border: 10px solid rgb(163, 161, 161);
-    justify-content: space-between;
-    padding: 5px;
-}
-
-.card {
-    margin: 5px;
-    border: none;
-}
-
-#board .card {
-    margin: 5px;
-    border: none;
-    background-color: #111111;
-    zoom: 1.1;
-
-}
-
-.card:active {
-    transform: scale(0.97);
-    transition: transform .2s;
+    .reservation-footer {
+        padding: 30px 10px;
+        /* Further reduce padding */
+    }
 }
