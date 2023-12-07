@@ -759,16 +759,42 @@ input[type="checkbox"]:checked {
 **/
 
 /************** MAIN **************/
-.header-content {
-    color: #ffffff;
-    text-align: left;
-    font-family: 'League Spartan', sans-serif;
-    font-weight: 400;
-    padding: 50px 0 60px 240px;
-    opacity: 1;
-    position: relative;
+.homepage-heading {
+    width: 100%;
+    position: absolute;
+    top: 180px;
     background-color: transparent;
     word-break: break-all;
+}
+
+.homepage-heading .heading-container {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.homepage-heading .heading-container .row {
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.homepage-heading .heading-container .header-content {
+    margin: 0 auto;
+    color: #ffffff;
+    width: 700px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+section .container .service {
+    margin: 0 auto;
+}
+
+.section5 {
+    height: 1300px;
 }
 
 .section2,
@@ -776,17 +802,21 @@ input[type="checkbox"]:checked {
     background-color: #ffffff;
     font-family: 'League Spartan', sans-serif;
     padding: 40px;
+    height: 1500px;
 }
 
 .section2 img,
 .section3 img {
+    width: 100%;
     height: auto;
     box-shadow: 0 10px 8px #0000001a;
 }
 
-.section2 img {
-    width: 70%;
+section .container .service {
+    margin: 0 auto;
+    height: 500px;
 }
+
 
 .section5 img {
     width: 100%;
@@ -955,9 +985,6 @@ input[type="checkbox"]:checked {
     padding: 20px;
 }
 
-section .container .service {
-    margin: 0 auto;
-}
 
 section .container .service .col {
     margin: 0 auto;
@@ -2861,6 +2888,11 @@ section .container .service .col {
 *
 * @author Heloise Lui 
 **/
+
+    .section5 img {
+        width: 120%;
+    }
+
     .upcoming-events h1,
     .newsletter h2,
     .reservation-footer h2 {
@@ -2878,7 +2910,6 @@ section .container .service .col {
 
     .events .row {
         margin: 0 auto;
-
     }
 
     .event {
@@ -3852,6 +3883,10 @@ section .container .service .col {
 *
 * @author Heloise Lui 
 **/
+    .section5 img {
+        width: 140%;
+    }
+
     .upcoming-events h1,
     .newsletter h2,
     .reservation-footer h2 {
