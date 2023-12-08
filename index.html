@@ -149,13 +149,27 @@
 
 
     <!------ SECTION 5 ------>
-    <section class="section5 mb-5">
+    <section class="section5">
         <div class="container mt-5">
             <div class="row service">
                 <h3>Stories at Sipem...</h3>
                 <div class="col-sm-12 col-lg-6 order-md-1">
                     <img src="./assets/images/gold-lines.png" alt="Vertical lines for decoration" class="gold-lines">
-                    <img src="./assets/images/sipem-stories.png" alt="Image of some friends drinking">
+                    <!-- JavaScript Carousel -->
+                    <div id="sipemCarousel" class="carousel">
+                        <div class="carousel-inner">
+                            <img src="./assets/images/sipem-stories2.png" alt="First slide"
+                                class="carousel-item active">
+                            <img src="./assets/images/sipem-stories3.png" alt="Second slide" class="carousel-item">
+                            <img src="./assets/images/sipem-stories2.png" alt="Third slide" class="carousel-item">
+                            <img src="./assets/images/sipem-stories3.png" alt="Third slide" class="carousel-item">
+
+                        </div>
+                        <button id="prev" class="carousel-control-prev"><img src="./assets/images/arrow-left.png"
+                                alt="Arrow-left"></button>
+                        <button id="next" class="carousel-control-next"><img src="./assets/images/arrow-right.png"
+                                alt="Arrow-right"></button>
+                    </div>
                 </div>
                 <div class="col-sm-12 col-lg-6 order-md-1">
                     <p>Stories at Sipem unfold in every sip. At this special place, each cocktail is a chapter, and the
@@ -323,6 +337,8 @@
 
     <!----- SCRIPTS-->
     <script type="text/javascript" src="assets/js/burgerMenu.js" defer></script>
+    <script type="text/javascript" src="assets/js/carousel.js" defer></script>
+
 
 </body>
 

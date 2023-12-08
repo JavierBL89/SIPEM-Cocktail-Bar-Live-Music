@@ -1,4 +1,21 @@
+/* Root Variables for Color Scheme and Fonts */
+:root {
+    /* Color Palette */
+    --beaver: #9E7F66;
+    --cod-grey: #111111;
+    --mirage: #17192B;
+    --elbony-clay: #242B37;
+    --shuttle-gray: #5C6779;
+    --white: #ffffff;
+    --black: #000000;
+
+    /* Font Families */
+    --font-league-spartan: 'League Spartan', sans-serif;
+    --font-sanchez: 'Sanchez', serif;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Lora:wght@500;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&family=Sanchez:ital@0;1&display=swap');
+
 
 
 h1,
@@ -819,13 +836,10 @@ section .container .service {
 }
 
 
-.section5 img {
+/* .section5 img {
     width: 100%;
-}
+} */
 
-.section5 img:first-child {
-    width: 40%;
-}
 
 /* Estilizando o h3 */
 .section2 h3,
@@ -843,8 +857,7 @@ section .container .service {
 .section5 p {
     font-family: 'League Spartan';
     font-size: 1.3rem;
-    margin-top: 200px;
-    margin-left: 100px;
+    margin: 170px 10px;
 }
 
 .header-content h1 {
@@ -981,9 +994,17 @@ section .container .service {
 }
 
 .btn-homepage:hover {
-    background-color: #fff;
+    background-color: #ffffff;
     color: #333;
     text-decoration: none;
+}
+
+/* #sipemCarousel button {
+    background-color: #9E7F66;
+} */
+
+#sipemCarousel img {
+    background-color: #ffffff;
 }
 
 /****
@@ -1173,7 +1194,7 @@ section .container .service .col {
 
 .cocktail-overview p,
 .cocktail-section P {
-    font-family: 'Sanchez' serif;
+    font-family: 'Sanchez', serif;
 }
 
 /* Style for cocktail image*/
@@ -2978,7 +2999,7 @@ section .container .service .col {
     }
 
     .row h3 {
-        font-size: 3.5rem;
+        font-size: 3rem;
         font-weight: 400;
     }
 
@@ -2986,14 +3007,19 @@ section .container .service .col {
         height: 1200px;
     }
 
-    .section2,
+    .section2 {
+        height: 1500px;
+
+    }
+
     .section3 {
         height: 1600px;
     }
 
     .section4 .container-image {
-        height: 800px;
+        height: 700px;
         margin: 0 auto;
+        padding: 200px 0;
     }
 
     .section4 p {
@@ -3003,10 +3029,12 @@ section .container .service .col {
     }
 
     .section5 p {
-        width: 500px;
+        width: 85%;
         margin: 0 auto;
         font-size: 1.4rem;
-        margin: 0 auto;
+        font-family: 'League Spartan';
+        font-size: 1.3rem;
+        margin: 50px auto;
     }
 
     .btn-homepage {
@@ -3107,7 +3135,8 @@ section .container .service .col {
 
     #about-header,
     #signature-header,
-    #upcoming-header {
+    #upcoming-header,
+    #inside-header {
         height: 150px;
         position: relative;
     }
@@ -4049,9 +4078,12 @@ section .container .service .col {
         height: 900px;
     }
 
-    .section2,
+    .section2 {
+        height: 880px;
+    }
+
     .section3 {
-        height: 1000px;
+        height: 950px;
     }
 
     .section4 .container-image {
@@ -4078,18 +4110,11 @@ section .container .service .col {
         font-size: 2rem;
     }
 
-    .section5 img:first-child {
-        width: 35%;
-    }
-
-    .section5 img:last-child {
-        width: 100%;
-    }
 
     .section5 p {
         width: 90%;
-        margin: 0 auto;
-        font-size: 1.4rem;
+        margin: 30px auto;
+        font-size: 1.2rem;
     }
 
     .reservation-footer .btn {
@@ -4109,9 +4134,6 @@ section .container .service .col {
 *
 * @author Heloise Lui 
 **/
-    .section5 img {
-        width: 140%;
-    }
 
     .upcoming-events h1,
     .newsletter h2,
