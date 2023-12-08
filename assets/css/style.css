@@ -2165,6 +2165,7 @@ section .container .service .col {
         padding: 70px 80px;
         position: relative;
         color: #fff;
+        text-align: center;
     }
 
     .reservation-footer::before {
@@ -2183,14 +2184,15 @@ section .container .service .col {
         z-index: 2;
         display: flex;
         justify-content: space-around;
-        width: 1300px;
+        width: 100%;
     }
 
     .reservation-heading {
         font-family: 'League Spartan', sans-serif;
-        font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: bold;
-        margin-bottom: 1rem;
+        text-align: left;
+        align-items: center;
     }
 
     .btn-footer {
@@ -3091,12 +3093,13 @@ section .container .service .col {
     .upcoming-events h1,
     .newsletter h2,
     .reservation-footer h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
 
     .event h2 {
         font-size: 1.8rem;
+        text-align: center;
     }
 
     .event p,
@@ -3117,7 +3120,11 @@ section .container .service .col {
     .reservation-footer,
     .newsletter {
         padding: 40px 20px;
+        text-align: center;
+
     }
+
+
 
     .btn-footer {
         width: auto;
@@ -4100,7 +4107,7 @@ section .container .service .col {
     }
 
     .homepage-heading h1 {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
     }
 
     .header-content p {
@@ -4176,12 +4183,21 @@ section .container .service .col {
     .upcoming-events h1,
     .newsletter h2,
     .reservation-footer h2 {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         margin: 0 auto;
     }
 
     .event h2 {
         font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .reservation-footer button {
+        margin-top: 30px;
+    }
+
+    .reservation-footer {
+        text-align: center;
     }
 
     .event p,
