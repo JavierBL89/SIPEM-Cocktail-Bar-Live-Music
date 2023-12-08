@@ -154,7 +154,7 @@ p a {
 
 /*********************  SHARED HEADER PROPERTIES*/
 header {
-    height: 680px;
+    height: 800px;
 }
 
 header .navbar {
@@ -768,20 +768,16 @@ input[type="checkbox"]:checked {
 }
 
 .homepage-heading .heading-container {
-    margin: 0 auto;
+    margin: 50px auto;
     text-align: center;
-    width: 100%;
+    max-width: 1300px;
     padding-left: 5%;
     padding-right: 5%;
 }
 
-.homepage-heading .heading-container .row {
-    margin: 0 auto;
-    justify-content: center;
-}
 
 .homepage-heading .heading-container .header-content {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     color: #ffffff;
     width: 700px;
     font-family: 'League Spartan', sans-serif;
@@ -843,7 +839,7 @@ section .container .service {
 }
 
 .header-content h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 400;
     font-family: 'League Spartan';
     letter-spacing: -1px;
@@ -852,6 +848,8 @@ section .container .service {
 .header-content p {
     font-size: 1.3rem;
     font-family: 'League Spartan';
+    word-break: keep-all;
+    width: 500px;
 }
 
 .container-image {
@@ -946,6 +944,9 @@ section .container .service {
     color: #fff;
     padding: 15px 70px;
     font-size: 1rem;
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
@@ -2525,7 +2526,7 @@ section .container .service .col {
     }
 
     /****
-* Reservations page stylings for mobile screen
+* Reservations page stylings for tablet screen
 * @author Javier Bastande 
 **/
 
@@ -2600,7 +2601,6 @@ section .container .service .col {
 
     #reservations-main-wraper input::placeholder {
         font-size: 1.1rem;
-        ;
     }
 
     #reservations .booking-form-wraper .contact-number-wraper {
@@ -2884,20 +2884,45 @@ section .container .service .col {
     }
 
     /****
-* Upcoming page stylings for tablet screen
+* Home page stylings for tablet screen
 *
 * @author Heloise Lui 
 **/
-
-    .section5 img {
-        width: 120%;
+    .homepage-heading .heading-container .header-content {
+        margin: 0 auto;
+        color: #ffffff;
+        width: 600px;
+        padding-left: 3%;
+        padding-right: 3%;
     }
 
+    .homepage-heading h1 {
+        font-size: 3.3rem;
+    }
+
+    .header-content p {
+        font-size: 1.1rem;
+        width: 80%;
+        max-width: 400px;
+        text-align: left;
+        word-break: keep-all;
+    }
+
+    .btn-homepage {
+        width: 60%;
+        margin: 15px auto 0;
+    }
+
+    /* * Upcoming page stylings for tablet screen
+*
+* @author Heloise Lui 
+**/
     .upcoming-events h1,
     .newsletter h2,
     .reservation-footer h2 {
         font-size: 2.5rem;
     }
+
 
     .event h2 {
         font-size: 1.8rem;
@@ -2980,6 +3005,11 @@ section .container .service .col {
     #upcoming-header {
         height: 150px;
         position: relative;
+    }
+
+    #homepage-header {
+        height: 660px;
+
     }
 
     /***** modal menu */
@@ -3877,6 +3907,49 @@ section .container .service .col {
     #left-quote {
         bottom: 10px;
     }
+
+    /****
+* Home page stylings for Mobile screen
+*
+* @author Heloise Lui 
+**/
+
+    .homepage-heading .heading-container {
+        margin: 0 auto;
+        color: #ffffff;
+        width: 95%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .homepage-heading .heading-container .header-content {
+        min-width: 100%;
+        max-width: 350px;
+    }
+
+    .homepage-heading h1 {
+        font-size: 2.3rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+        width: fit-content;
+        max-width: 80%;
+        text-align: left;
+        word-break: keep-all;
+    }
+
+    /* .header-content .header-buttons {
+        padding-left: 0;
+    } */
+
+    .btn-homepage {
+        width: 80%;
+        margin: 15px auto 0;
+        padding: 10px;
+        font-size: 0.950rem;
+    }
+
 
     /****
 * Upcoming page stylings for mobile screen
