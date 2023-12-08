@@ -1,3 +1,8 @@
+/*** File holds the people's stories carousel fucntionality 
+ * 
+ * @author Heloise Lui
+ */
+
 document.addEventListener('DOMContentLoaded', function () {
   const items = document.querySelectorAll('.carousel .carousel-item');
   let currentItem = 0;

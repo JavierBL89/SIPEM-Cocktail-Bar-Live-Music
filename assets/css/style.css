@@ -800,7 +800,7 @@ input[type="checkbox"]:checked {
 .homepage-heading .heading-container .header-content {
     /* margin: 0 auto; */
     color: #ffffff;
-    width: 700px;
+    width: 720px;
     font-family: 'League Spartan', sans-serif;
     font-weight: 400;
     text-align: left;
@@ -1066,6 +1066,42 @@ section .container .service .col {
     color: #111111;
     font-size: 1rem;
     letter-spacing: 2px;
+}
+
+.upcoming-events img:hover,
+.newsletter button[type="submit"]:hover {
+    cursor: url("../images/pointer.png"), auto;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 50px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* Newsletter Section */
@@ -2072,6 +2108,8 @@ section .container .service .col {
         letter-spacing: 2px;
     }
 
+
+
     /* Newsletter Section */
     .newsletter {
         color: #242B37;
@@ -3038,7 +3076,7 @@ section .container .service .col {
     }
 
     .btn-homepage {
-        width: 60%;
+        width: 70%;
         margin: 15px auto 0;
     }
 
