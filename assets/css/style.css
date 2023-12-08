@@ -256,6 +256,10 @@ header #home-bg-img {
     opacity: 1.5;
 }
 
+#inside-header {
+    background-color: #111111;
+}
+
 #signature-header .overlay,
 #upcoming-header .overlay {
     width: inherit;
@@ -263,6 +267,8 @@ header #home-bg-img {
     background-color: #111111;
     opacity: 0.5;
 }
+
+
 
 header .rectangle {
     background-color: #111111;
@@ -753,8 +759,6 @@ input[type="checkbox"]:checked {
 /****
 * Home page stylings
 *
-* NOTE: No more styling for different sceeens were provided
-* for homepage
 * @author Heloise Lui 
 **/
 
@@ -1147,7 +1151,9 @@ section .container .service .col {
 
 
 
-/* CSS for Cocktail Sections */
+/* Signature page stylings Sections 
+**
+**@author Bence Pillips*/
 
 
 /* Style for Cocktail Overview */
@@ -1167,7 +1173,7 @@ section .container .service .col {
 
 .cocktail-overview p,
 .cocktail-section P {
-    font-family: 'Kalam', cursive;
+    font-family: 'Sanchez' serif;
 }
 
 /* Style for cocktail image*/
@@ -1244,6 +1250,43 @@ section .container .service .col {
 }
 
 
+/* Inside page stylings 
+**
+**@author Bence Pillips*/
+
+.gallery-page .container {
+    width: calc(100% - 40px);
+    columns: 3;
+}
+
+.gallery-page {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.2s linear;
+}
+
+.gallery-page .container {
+    padding: 2rem 5%;
+    gap: 1.4rem;
+}
+
+.container .gallery {
+    columns: 15rem 3;
+}
+
+.container .gallery img {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 0.7rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container .gallery img:hover {
+    transform: scale(1.02);
+}
+
+
 /*************************** Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
@@ -1281,7 +1324,8 @@ section .container .service .col {
 
     #about-header,
     #signature-header,
-    #upcoming-header {
+    #upcoming-header,
+    #inside-header {
         height: 200px;
         position: relative;
     }
@@ -2109,6 +2153,7 @@ section .container .service .col {
         text-decoration: none;
     }
 
+
 }
 
 
@@ -2161,7 +2206,8 @@ section .container .service .col {
 
     #about-header,
     #signature-header,
-    #upcoming-header {
+    #upcoming-header,
+    #inside-header {
         height: 150px;
         position: relative;
     }
@@ -2966,6 +3012,10 @@ section .container .service .col {
     .btn-homepage {
         width: 60%;
         margin: 15px auto 0;
+    }
+
+    .gallery-page .container {
+        columns: 2;
     }
 
     /* * Upcoming page stylings for tablet screen
@@ -4114,5 +4164,9 @@ section .container .service .col {
     .reservation-footer {
         padding: 30px 10px;
         /* Further reduce padding */
+    }
+
+    .gallery-page .container {
+        columns: 1;
     }
 }
